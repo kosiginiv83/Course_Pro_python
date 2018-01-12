@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Average|Crimson+Text|\
+            Quattrocento|Suravaram|Taviraj|Yrsa');
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #ffffff;
+	width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 1080px;
+}
+
+#header-block1 {
+  height: 100px;
+  background-color: orange;
+  margin-top: -19px;
+}
+
+#header-block1 div {
+  display: inline-block;
+  border: 1px solid blue;
+}
+
+#header-block2 {
+  height: 58px;
+  background-color: green;
+}
+
+#header-block2 div {
+  display: inline-block;
+  border: 1px solid red;
+}
+
+#header-block2 div p {
+  display: inline-block;
+  border: 1px solid blue;
+}
+
+.form {
+  position:relative;
+  display: inline-block;
+}
+.form-field {
+  display: block;
+}
+.form-field span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.form-field input {
+	border: 0;
+	background: 0;
+	height: 40px;
+	width: 100%;
+	display: block;
+	padding-right: 200px;
+	border: 1px solid #cccccc;
+	text-indent: 10px;
+	position: relative;
+	z-index: 5;
+  font-size: 16px;
+}
+.form-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 100%;
+	z-index: 10;
+}
+.form-button button {
+	border: 1px solid #cccccc;
+	background: #ffffff;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+	color: white;
+}
+.form-button button:hover {
+	background: #cedede;
+}
+.form-button button:hover:active, .form-button button:active {
+	background: #dedede;
+	box-shadow: inset 0 2px 2px rgba(0, 0, 0, .2);
+}
+#loupe {
+  width: 15px;
+  height: 15px;
+}
+
+div#pix {
+	background-image: url(maket/06-psd.jpg);
+	background-size: 100% 100%;
+	position: absolute;
+	width: 1080px;
+	height: 1820px;
+	opacity: 0.4;
+	top: 0px;
+	#left: 0px;
+	#bottom: 0px;
+  #margin: 0 auto;
+	z-index: 999;
+}
