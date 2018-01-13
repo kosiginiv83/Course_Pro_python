@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Average|Crimson+Text|\
-            Quattrocento|Suravaram|Taviraj|Yrsa');
+            Quattrocento|Suravaram|Taviraj|Yrsa:400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans');
+
+/*
+общий бэкграунд - f8eedf (светло-бежевый) - opacity 100
+header-нижний слой - 000000 (черный) - opacity 100
+header-шум - разноцветный шум (noise.jpg) - opacity 5
+*/
 
 * {
 	box-sizing: border-box;
@@ -20,7 +26,23 @@ header {
 #header-block1 {
   height: 100px;
   background-color: orange;
-  margin-top: -19px;
+  #margin-top: -19px;
+}
+
+#header-block1 h1 {
+  display: inline-block;
+  padding: 5px 0 0 37px;
+  #top: 30px;
+  #left: 50px;
+  #margin: 0 auto;
+  font: 25pt "Yrsa", serif;
+  font-weight: 700;
+  letter-spacing: 3.7px;
+}
+
+#header-block1 article {
+  #right: 10px;
+  border: 1px solid red;
 }
 
 #header-block1 div {
@@ -29,7 +51,7 @@ header {
 }
 
 #header-block2 {
-  height: 58px;
+  height: 59px;
   background-color: green;
 }
 
