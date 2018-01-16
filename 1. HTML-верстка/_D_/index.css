@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Average|Crimson+Text|\
-            Quattrocento|Suravaram|Taviraj|Yrsa:400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans');
+            Quattrocento|Suravaram|Taviraj|Yrsa:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 
 /*
 общий бэкграунд - f8eedf (светло-бежевый) - opacity 100
@@ -30,53 +30,108 @@ header {
 }
 
 #header-block1 {
+  position: relative;
   height: 100px;
   background-color: orange;
   #margin-top: -19px;
 }
 
 #header-block1 h1 {
+  position: relative;
   display: inline-block;
-  padding: 5px 0 0 37px;
-  #top: 30px;
-  #left: 50px;
+  #padding: 0 0 0 37px;
+  top: -8px;
+  left: 37px;
   #margin: 0 auto;
   font: 25pt "Yrsa", serif;
-  font-weight: 700;
-  letter-spacing: 3.7px;
+  font-weight: 500;
+  letter-spacing: 4.4px;
+  color: white;
 }
 
 #header-block1 article {
-  #right: 10px;
-  border: 1px solid red;
+  display: inline-block;
+  position: relative;
+  #border: 1px solid red;
+  margin: 33px 0 0 656px;
+  overflow: auto;
 }
 
 #header-block1 div {
+  #position: relative;
   display: inline-block;
-  border: 1px solid blue;
+  #border: 1px solid blue;
+  margin-right: 20.5px;
+}
+
+.icon {
+  #display: inline-block;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+}
+
+#header-block1-digg {
+  background-image: url("pics/digg.png");
+}
+#header-block1-mail {
+  background-image: url("pics/mail.png");
+}
+#header-block1-flickr {
+  background-image: url("pics/flickr.png");
+}
+#header-block1-call {
+  background-image: url("pics/call.png");
 }
 
 #header-block2 {
+  position: relative;
   height: 59px;
   background-color: green;
+  padding-top: 3px;
 }
 
-#header-block2 div {
+#menu {
+  #position: relative;
   display: inline-block;
-  border: 1px solid red;
+  #border: 1px solid red;
+  margin-left: 35px;
+  height: 100%;
+  #padding: auto auto;
+  #right: 0px;
+}
+
+#search {
+  display: inline-block;
+  position: relative;
+  #border: 1px solid red;
+  margin: 0 0 0 270px;
 }
 
 #header-block2 div p {
+  #position: relative;
   display: inline-block;
-  border: 1px solid blue;
+  #border: 1px solid blue;
+  margin-right: 16.1px;
+  margin-top: 18px;
+  font: 11.8pt "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.79px;
+  color: white;
+  #border: 1px solid red;
+}
+
+#header-block2 div#search p {
+  margin-right: 7px;
+  margin-left: 0px;
 }
 
 .form {
-  position:relative;
+  position: relative;
   display: inline-block;
 }
 .form-field {
-  display: block;
+  display: inline-block;
 }
 .form-field span {
 	position: absolute;
@@ -86,29 +141,32 @@ header {
 }
 .form-field input {
 	border: 0;
-	background: 0;
-	height: 40px;
-	width: 100%;
-	display: block;
-	padding-right: 200px;
-	border: 1px solid #cccccc;
+	#background: 0;
+  background-color: blue;
+	height: 26px;
+	width: 203px;
+	#display: block;
+	padding-right: 30px;
+  padding-left: 25px;
+  padding-top: 5px;
+	#border: 1px solid #333;
+	#box-sizing: border-box;
 	text-indent: 10px;
 	position: relative;
 	z-index: 5;
-  font-size: 16px;
 }
 .form-button {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 40px;
+	width: 30px;
 	height: 100%;
 	z-index: 10;
 }
 .form-button button {
-	border: 1px solid #cccccc;
-	background: #ffffff;
-	display: block;
+	border: 0;
+	#background: red;
+	#display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -119,21 +177,26 @@ header {
 	appearance: none;
 	-webkit-appearance: none;
 	cursor: pointer;
-	color: white;
+	#color: white;
+  margin: auto;
+  background-color: blue;
 }
 .form-button button:hover {
-	background: #cedede;
+	background: green;
 }
-.form-button button:hover:active, .form-button button:active {
-	background: #dedede;
+.form-button button:hover:active,  .form-button button:active {
+	background: green;
 	box-shadow: inset 0 2px 2px rgba(0, 0, 0, .2);
 }
+
 #loupe {
-  width: 15px;
-  height: 15px;
+  background-image: url("pics/mg_glass.png");
+  background-size: cover;
+  width: 24px;
+  height: 20px;
 }
 
-div#pix {
+di#v#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
