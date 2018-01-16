@@ -10,10 +10,10 @@
       <section id="header-block1">
         <h1>SITENAME</h1>
         <article>
-          <div class="icon" id="header-block1-digg"> </div>
-          <div class="icon" id="header-block1-mail"> </div>
-          <div class="icon" id="header-block1-flickr"> </div>
-          <div class="icon" id="header-block1-call"> </div>
+          <div class="icon" id="header-block1-digg"></div>
+          <div class="icon" id="header-block1-mail"></div>
+          <div class="icon" id="header-block1-flickr"></div>
+          <div class="icon" id="header-block1-call"></div>
         </article>
       </section>
       <section id="header-block2">
@@ -40,6 +40,20 @@
     </header>
     <main></main>
     <footer></footer>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+    </script>
+
+    <script>
+    jQuery(function(f){
+        var element = f('#header-block1');
+        f(window).scroll(function(){
+            element['fade'+ (f(this).scrollTop() < 200 ? 'In': 'Out')](100);
+        });
+    });
+    </script>
+
 
     <div id="pix"> </div>
   </body>
