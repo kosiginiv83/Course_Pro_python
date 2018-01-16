@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css" type="text/css">
   </head>
   <body>
+
     <header>
       <section id="header-block1">
         <h1>SITENAME</h1>
@@ -38,8 +39,36 @@
         </div>
       </section>
     </header>
-    <main></main>
-    <footer></footer>
+
+    <main>
+      <section class="main" id="main-block1">
+        <div id="main-block1-div1">
+          <h2>WELCOME TO OUR SITE</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            feugiat, nulla vitae accumsan feugiat, odio nisi tristique odio,
+            sit amet dictum quam augue vel urna. Proin eleifend, erat eu
+            rhoncus suscipit, nisi velit pharetra leo
+          </p>
+          <p class="main-block1-button">LEARN MORE</p>
+          <p class="main-block1-button" id="button2">OUR WORK</p>
+          <img id="eye" src="pics/eye.jpg" alt="">
+          <img id="abstract" src="pics/abstract.jpg" alt="">
+        </div>
+        <div id="main-block1-div2">
+          <p>
+            You're here: Home > Welcome..
+          </p>
+        </div>
+      </section>
+      <section class="main" id="main-block2">
+
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
 
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
@@ -49,7 +78,7 @@
     jQuery(function(f){
         var element = f('#header-block1');
         f(window).scroll(function(){
-            element['fade'+ (f(this).scrollTop() < 200 ? 'In': 'Out')](100);
+            element['fade'+ (f(this).scrollTop() < 400 ? 'In': 'Out')](100);
         });
     });
     </script>

@@ -27,10 +27,13 @@ body {
 header {
   position: fixed;
   width: 1080px;
+  #margin-bottom: 179px;
+  margin-top: -21px;
+  z-index: 10;
 }
 
 #header-block1 {
-  position: relative;
+  #position: relative;
   height: 100px;
   background-color: #febf5d;
   #margin-top: -19px;
@@ -40,7 +43,7 @@ header {
   position: relative;
   display: inline-block;
   #padding: 0 0 0 37px;
-  top: -8px;
+  top: -10px;
   left: 37px;
   #margin: 0 auto;
   font: 25pt "Yrsa", serif;
@@ -53,7 +56,7 @@ header {
   display: inline-block;
   position: relative;
   #border: 1px solid red;
-  margin: 33px 0 0 656px;
+  margin: 31px 0 0 656px;
   overflow: auto;
 }
 
@@ -85,10 +88,10 @@ header {
 }
 
 #header-block2 {
-  position: relative;
+  #position: relative;
   height: 59px;
   background-color: #40312a;
-  padding-top: 3px;
+  #padding-top: 0px;
 }
 
 #menu {
@@ -98,6 +101,7 @@ header {
   margin-left: 35px;
   height: 100%;
   #padding: auto auto;
+  padding-top: 1px;
   #right: 0px;
 }
 
@@ -197,13 +201,79 @@ header {
   margin-right: 5px;
 }
 
+main {
+  width: 1080px;
+  position: relative;
+  top: 138px;
+}
 
+#main-block1 {
+  #position: relative;
+  #background-color: #f8eedf;
+  background-color: grey;
+  height: 403px;
+}
 
+#main-block1-div1 {
+  position: relative;
+  top: 50px;
+  background-color: #40312a;
+  #background-color: green;
+  width: 1006px;
+  height: 260px;
+  margin: 0 auto;
+}
 
+#main-block1-div1 h2 {
+  padding: 26px 350px 0px 44px;
+  font: 21pt "Yrsa", serif;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: blue;
+}
+#main-block1-div1 p {
+  padding: 0px 430px 0px 42px;
+  margin-top: -6px;
+  font: 10pt "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: white;
+}
 
+.main-block1-button {
 
+}
+#button2 {
 
+}
 
+#eye {
+  position:absolute;
+  top: 50px;
+  right: 50px;
+  width: ;
+  height: ;
+  z-index: 3;
+  background-size: cover;
+}
+#abstract {
+  position:absolute;
+  top: 60px;
+  right: 60px;
+  width: ;
+  height: ;
+  z-index: 2;
+  background-size: cover;
+}
+
+#main-block1-div2 {
+  position: relative;
+  top: 34px;
+  background-color: blue;
+  width: 1006px;
+  height: 40px;
+  margin: 0 auto;
+}
 
 
 
