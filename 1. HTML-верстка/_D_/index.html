@@ -48,12 +48,12 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             feugiat, nulla vitae accumsan feugiat, odio nisi tristique odio,
             sit amet dictum quam augue vel urna. Proin eleifend, erat eu
-            rhoncus suscipit, nisi velit pharetra leo
+            rhoncus suscipit, nisl velit pharetra leo
           </p>
           <p class="main-block1-button">LEARN MORE</p>
           <p class="main-block1-button" id="button2">OUR WORK</p>
-          <img id="eye" src="pics/eye.jpg" alt="">
-          <img id="abstract" src="pics/abstract.jpg" alt="">
+          <img id="eye" src="pics/eye.jpg" alt="abstract drawing">
+          <img id="abstract" src="pics/abstract.jpg" alt="abstract drawing">
         </div>
         <div id="main-block1-div2">
           <p>
@@ -62,7 +62,40 @@
         </div>
       </section>
       <section class="main" id="main-block2">
-
+        <h2>FROM THE BLOG</h2>
+        <article>
+          <h3>Blog Post Name Here</h3>
+          <h4>October 15th 2010 | 7 comments</h4>
+          <div id="main-block2-div1"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            feugiat, nulla vitae accumsan feugiat, odio nisi tristique odio,
+            sit amet dictum quam augue vel urna. Proin eleifend, erat eu
+            rhoncus suscipit, nisl velit pharetra leo
+            <a href=#>Continue Reading...</a>
+          </p>
+        </article>
+        <article>
+          <h3>Blog Post Name Here</h3>
+          <h4>October 15th 2010 | 7 comments</h4>
+          <div id="main-block2-div2"></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            feugiat, nulla vitae accumsan feugiat, odio nisi tristique odio,
+            sit amet dictum quam augue vel urna. Proin eleifend, erat eu
+            rhoncus suscipit, nisl velit pharetra leo
+            <a href=#>Continue Reading...</a>
+          </p>
+        </article>
+        <div>THE BLOG</div>
+      </section>
+      <section class="main" id="main-block3">
+        <div></div>
+        <h3>WHO WE ARE</h3>
+        <div></div>
+        <h3>SPONSORS</h3>
+        <div class="sponsors" id="sponsor1"></div>
+        <div class="sponsors" id="sponsor1"></div>
       </section>
     </main>
 
@@ -73,9 +106,8 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
     </script>
-
     <script>
-    jQuery(function(f){
+    $(function(f){
         var element = f('#header-block1');
         f(window).scroll(function(){
             element['fade'+ (f(this).scrollTop() < 400 ? 'In': 'Out')](100);
@@ -84,6 +116,6 @@
     </script>
 
 
-    <div id="pix"> </div>
+    <div id="pix"></div>
   </body>
 </html>

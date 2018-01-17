@@ -222,6 +222,7 @@ main {
   width: 1006px;
   height: 260px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 #main-block1-div1 h2 {
@@ -236,43 +237,67 @@ main {
   margin-top: -6px;
   font: 10pt "Montserrat", sans-serif;
   font-weight: 400;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.25px;
+  line-height: 1.36;
   color: white;
 }
 
-.main-block1-button {
+#main-block1-div1 .main-block1-button {
+  #border: 1px solid red;
+  #display: inline-block;
+  position: absolute;
+  top: 178px;
+  width: 170px;
+  height: 45px;
+  text-align: center;
+  left: 43px;
+  padding: 13px 3px 0 0;
+  background-color: #febf5d;
+  font: 11.65pt "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.4px;
 
 }
-#button2 {
-
+#main-block1-div1 #button2 {
+  #border: 1px solid blue;
+  left: 243px;
+  padding-right: 0;
 }
 
 #eye {
   position:absolute;
-  top: 50px;
-  right: 50px;
-  width: ;
-  height: ;
-  z-index: 3;
-  background-size: cover;
+  top: 30px;
+  right: 128px;
+  width: 243px;
+  height: 250px;
+  z-index: 5;
+  background-color: white;
+  #background-size: cover;
 }
 #abstract {
   position:absolute;
-  top: 60px;
-  right: 60px;
-  width: ;
-  height: ;
-  z-index: 2;
-  background-size: cover;
+  top: 49px;
+  right: 43px;
+  width: 230;
+  height: 220;
+  z-index: 4;
+  background-color: white;
+  #background-size: cover;
 }
 
 #main-block1-div2 {
   position: relative;
-  top: 34px;
+  top: 27px;
   background-color: blue;
   width: 1006px;
-  height: 40px;
+  height: 63px;
   margin: 0 auto;
+  font: 12pt "Yrsa", serif;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: white;
+  padding: 18px 0px 0px 42px;
+  z-index: 1;
 }
 
 
