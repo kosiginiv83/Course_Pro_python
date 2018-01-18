@@ -19,7 +19,7 @@ Welcome to our site - под картинками есть тени
 }
 
 body {
-	background: #ffffff;
+	background: #f8eedf;
   width: 1080px;
   margin: 0 auto;
 }
@@ -57,10 +57,13 @@ header {
 
 #header-block1 article {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin-left: 250px;
   #border: 1px solid red;
-  margin: 33px 0 0 656px;
-  overflow: auto;
+  #margin: 33px 0 0 656px;
+  #overflow: auto;
 }
 
 #header-block1 div {
@@ -91,8 +94,9 @@ header {
 }
 
 #header-block2 {
-  #position: relative;
+  position: relative;
   #height: 59px;
+  width: 100%;
   background-color: #40312a;
   #padding-top: 0px;
   padding-bottom: 5px;
@@ -100,15 +104,19 @@ header {
 }
 
 #menu {
-  #position: relative;
+  position: relative;
   display: inline-block;
-  #border: 1px solid red;
+  border: 1px solid red;
   margin-left: 35px;
-  margin-right: 300px;
+  #margin-right: 300px;
   height: 100%;
   #padding: auto auto;
   padding-top: 1px;
   #right: 0px;
+}
+
+#last-menu-item {
+  padding-right: 300px;
 }
 
 #search {
@@ -116,10 +124,23 @@ header {
   position: absolute;
   #border: 1px solid red;
   #margin: 0 0 0 270px;
-  right: 37px;
+  #margin-left: 170px;
+  right: 27px;
   #left: 270px;
   z-index: 11;
   margin-top: 3px;
+}
+
+header-block2:after {
+  content: "";
+	width: 100%;
+	display: block;
+	#clear: both;
+}
+
+header-block2 {
+  display: inline-block;
+  position: relative;
 }
 
 #header-block2 div p {
@@ -132,7 +153,7 @@ header {
   font-weight: 500;
   letter-spacing: 0.79px;
   color: white;
-  #border: 1px solid red;
+  border: 1px solid red;
 }
 
 #header-block2 div#search p {
@@ -216,6 +237,14 @@ main {
   position: relative;
   top: 138px;
 }
+
+main:after{
+		content: "";
+		width: 100%;
+		display: block;
+		clear: both;
+	}
+
 
 #main-block1 {
   #position: relative;
@@ -324,7 +353,7 @@ main {
 }
 
 footer {
-  clear: both;
+  #clear: both;
 }
 
 
