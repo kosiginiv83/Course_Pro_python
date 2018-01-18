@@ -20,21 +20,24 @@ Welcome to our site - под картинками есть тени
 
 body {
 	background: #ffffff;
-	width: 1080px;
+  width: 1080px;
   margin: 0 auto;
 }
 
 header {
   position: fixed;
-  width: 1080px;
+  width: 100%;
   #margin-bottom: 179px;
-  margin-top: -21px;
+  #margin-top: -21px;
   z-index: 10;
+  top: 0;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 #header-block1 {
   #position: relative;
-  height: 100px;
+  #height: 100px;
   background-color: #febf5d;
   #margin-top: -19px;
 }
@@ -43,7 +46,7 @@ header {
   position: relative;
   display: inline-block;
   #padding: 0 0 0 37px;
-  top: -10px;
+  top: -8px;
   left: 37px;
   #margin: 0 auto;
   font: 25pt "Yrsa", serif;
@@ -56,7 +59,7 @@ header {
   display: inline-block;
   position: relative;
   #border: 1px solid red;
-  margin: 31px 0 0 656px;
+  margin: 33px 0 0 656px;
   overflow: auto;
 }
 
@@ -89,9 +92,11 @@ header {
 
 #header-block2 {
   #position: relative;
-  height: 59px;
+  #height: 59px;
   background-color: #40312a;
   #padding-top: 0px;
+  padding-bottom: 5px;
+  #border: 3px solid green;
 }
 
 #menu {
@@ -99,6 +104,7 @@ header {
   display: inline-block;
   #border: 1px solid red;
   margin-left: 35px;
+  margin-right: 300px;
   height: 100%;
   #padding: auto auto;
   padding-top: 1px;
@@ -107,9 +113,13 @@ header {
 
 #search {
   display: inline-block;
-  position: relative;
+  position: absolute;
   #border: 1px solid red;
-  margin: 0 0 0 270px;
+  #margin: 0 0 0 270px;
+  right: 37px;
+  #left: 270px;
+  z-index: 11;
+  margin-top: 3px;
 }
 
 #header-block2 div p {
@@ -300,12 +310,25 @@ main {
   z-index: 1;
 }
 
+#main-block2 {
+  #background-color: green;
+  display: inline-block;
+  width: 62.3%;
+  float: left;
+}
+
+#main-block3 {
+  #background-color: blue;
+  display: inline-block;
+  width: 37.7%;
+}
+
+footer {
+  clear: both;
+}
 
 
-
-
-
-div#pix {
+d#iv#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
