@@ -32,7 +32,16 @@ header {
   z-index: 10;
   top: 0;
   max-width: 1080px;
+  min-width: 410px;
   margin: 0 auto;
+}
+
+header:after {
+  content: "";
+	width: 100%;
+	display: block;
+	clear: both;
+  #border: 3px solid green;
 }
 
 #header-block1 {
@@ -40,13 +49,14 @@ header {
   #height: 100px;
   background-color: #febf5d;
   #margin-top: -19px;
+  padding: 5px 0 0px 0;
 }
 
 #header-block1 h1 {
   position: relative;
   display: inline-block;
   #padding: 0 0 0 37px;
-  top: -8px;
+  #top: -8px;
   left: 37px;
   #margin: 0 auto;
   font: 25pt "Yrsa", serif;
@@ -58,9 +68,10 @@ header {
 #header-block1 article {
   display: inline-block;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 33px;
+  right: 17px;
   margin-left: 250px;
+  #margin-top: 30px;
   #border: 1px solid red;
   #margin: 33px 0 0 656px;
   #overflow: auto;
@@ -101,46 +112,30 @@ header {
   #padding-top: 0px;
   padding-bottom: 5px;
   #border: 3px solid green;
+  #text-align: right;
+
+}
+
+#header-block2:after {
+  content: "";
+	width: 100%;
+	display: block;
+	clear: both;
+  #border: 3px solid green;
 }
 
 #menu {
   position: relative;
   display: inline-block;
-  border: 1px solid red;
+  #border: 1px solid red;
   margin-left: 35px;
   #margin-right: 300px;
   height: 100%;
   #padding: auto auto;
-  padding-top: 1px;
+  padding-top: 2px;
   #right: 0px;
-}
-
-#last-menu-item {
-  padding-right: 300px;
-}
-
-#search {
-  display: inline-block;
-  position: absolute;
-  #border: 1px solid red;
-  #margin: 0 0 0 270px;
-  #margin-left: 170px;
-  right: 27px;
-  #left: 270px;
-  z-index: 11;
-  margin-top: 3px;
-}
-
-header-block2:after {
-  content: "";
-	width: 100%;
-	display: block;
-	#clear: both;
-}
-
-header-block2 {
-  display: inline-block;
-  position: relative;
+  #float: left;
+  width: 95%;
 }
 
 #header-block2 div p {
@@ -153,12 +148,32 @@ header-block2 {
   font-weight: 500;
   letter-spacing: 0.79px;
   color: white;
-  border: 1px solid red;
+  #border: 1px solid red;
+
+}
+
+#last-menu-item {
+  padding-right: 280px;
+
+}
+
+#search {
+  display: inline-block;
+  position: absolute;
+  #border: 1px solid red;
+  #margin: 0 0 0 280px;
+  #margin-left: 170px;
+  right: 20px;
+  #left: 270px;
+  z-index: 11;
+  margin-top: 0px;
+  #width: 40%;
 }
 
 #header-block2 div#search p {
   margin-right: 7px;
   margin-left: 0px;
+
 }
 
 .form {
@@ -179,7 +194,7 @@ header-block2 {
 	#background: 0;
   background-color: blue;
 	height: 26px;
-	width: 203px;
+	width: 200px;
 	#display: block;
 	padding-right: 30px;
   padding-left: 5px;
@@ -233,9 +248,11 @@ header-block2 {
 }
 
 main {
-  width: 1080px;
+  width: 100%;
   position: relative;
   top: 138px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 main:after{
@@ -243,8 +260,7 @@ main:after{
 		width: 100%;
 		display: block;
 		clear: both;
-	}
-
+}
 
 #main-block1 {
   #position: relative;
