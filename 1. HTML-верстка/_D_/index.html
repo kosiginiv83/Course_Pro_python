@@ -97,16 +97,47 @@
           <div>THE BLOG</div>
         </div>
         <div id="main-block2-div2">
-          <div></div>
-          <h3>WHO WE ARE</h3>
-          <div class="who"></div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur accumsan feugiat...
-            <a href=#>Read More!</a>
-          </p>
-          <h3>SPONSORS</h3>
-          <div class="sponsors" id="sponsor1"></div>
-          <div class="sponsors" id="sponsor2"></div>
+          <article>
+            <div class="tabs">
+              <input id="tab1" type="radio" name="tabs" checked>
+              <label for="tab1" title="Вкладка 1">Вкладка 1</label>
+
+              <input id="tab2" type="radio" name="tabs">
+              <label for="tab2" title="Вкладка 2">Вкладка 2</label>
+
+              <input id="tab3" type="radio" name="tabs">
+              <label for="tab3" title="Вкладка 3">Вкладка 3</label>
+
+              <section id="content-tab1">
+                  <p>
+          		      Здесь размещаете любое содержание....
+                  </p>
+              </section>
+              <section id="content-tab2">
+                  <p>
+                    Здесь размещаете любое содержание....
+                  </p>
+              </section>
+              <section id="content-tab3">
+                  <p>
+                    Здесь размещаете любое содержание....
+          		</p>
+              </section>
+            </div>
+          </article>
+          <article>
+            <h3>WHO WE ARE</h3>
+            <div id="who"></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur accumsan feugiat...
+              <a href=#>Read More!</a>
+            </p>
+          </article>
+          <article>
+            <h3>SPONSORS</h3>
+            <div class="sponsors" id="sponsor1"></div>
+            <div class="sponsors" id="sponsor2"></div>
+          </article>
         </div>
       </section>
     </main>
@@ -119,12 +150,23 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
     </script>
     <script>
-    $(function(f){
+      $(function(f){
         var element = f('#header-block1');
         f(window).scroll(function(){
             element['fade'+ (f(this).scrollTop() < 400 ? 'In': 'Out')](100);
         });
-    });
+      });
+
+      function windowSize(){
+        if ($(window).width() >= '1008'){
+          $('#eye').show(10);
+          $('#abstract').show(10);
+        } else {
+          $('#eye').hide(10);
+          $('#abstract').hide(10);
+        }
+      }
+      $(window).on('load resize',windowSize);
     </script>
 
 
