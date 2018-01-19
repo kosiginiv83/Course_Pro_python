@@ -27,7 +27,7 @@ body {
 header {
   position: fixed;
   width: 100%;
-  #margin-bottom: 179px;
+
   #margin-top: -21px;
   z-index: 10;
   top: 0;
@@ -122,6 +122,7 @@ header:after {
 	display: block;
 	clear: both;
   #border: 3px solid green;
+  #margin-bottom: 40px;
 }
 
 #menu {
@@ -249,80 +250,129 @@ header:after {
 
 main {
   width: 100%;
+  #width: 100vw;
   position: relative;
-  top: 138px;
+  #top: 138px;
   max-width: 1080px;
+  min-width: 410px;
+
   margin: 0 auto;
+  margin-top: 150px;
+  #right: 0px;
+  #margin-bottom: 25px;
 }
 
 main:after{
-		content: "";
-		width: 100%;
-		display: block;
-		clear: both;
+	content: "";
+	width: 100%;
+	display: block;
+	clear: both;
+  #padding-bottom: 25px;
 }
 
 #main-block1 {
-  #position: relative;
+  position: relative;
   #background-color: #f8eedf;
   background-color: grey;
-  height: 403px;
+  #height: 403px;
+  margin: 0 auto;
+  #width: 100%;
+  width: auto;
+  padding-bottom: 100px;
+  #right: 0;
+  min-height: 400px;
+}
+
+#main-block1 div {
+  #border: 1px solid red;
+}
+
+#main-block1-div1 article {
+  width: 70vw;
+  max-width: 1006px;
+  min-width: 410px;
+  min-height: 260px;
 }
 
 #main-block1-div1 {
   position: relative;
-  top: 50px;
+  top: 60px;
   background-color: #40312a;
   #background-color: green;
-  width: 1006px;
-  height: 260px;
+  #width: 95%;
+  max-width: 1006px;
+  #height: 260px;
   margin: 0 auto;
   z-index: 2;
+  #width: auto;
 }
 
 #main-block1-div1 h2 {
-  padding: 26px 350px 0px 44px;
+  padding: 26px 50px 0px 44px;
   font: 21pt "Yrsa", serif;
   font-weight: 500;
   letter-spacing: 2.5px;
   color: blue;
 }
 #main-block1-div1 p {
-  padding: 0px 430px 0px 42px;
+  #width: 62.3%;
+  padding: 0px 22vw 0px 42px;
+  #margin: 0 430px 0 0;
   margin-top: -6px;
   font: 10pt "Montserrat", sans-serif;
   font-weight: 400;
   letter-spacing: -0.25px;
   line-height: 1.36;
   color: white;
+  #border: 1px solid red;
+  width: 88vw;
+  max-width: 840px;
 }
 
 #main-block1-div1 .main-block1-button {
   #border: 1px solid red;
-  #display: inline-block;
-  position: absolute;
-  top: 178px;
+  display: inline-block;
+  position: relative;
+  top: 34px;
   width: 170px;
   height: 45px;
   text-align: center;
   left: 43px;
-  padding: 13px 3px 0 0;
+  padding: 13px 3px 0px 0;
+  margin-bottom: 40px;
   background-color: #febf5d;
   font: 11.65pt "Montserrat", sans-serif;
   font-weight: 600;
   letter-spacing: 0.4px;
-
+  z-index: 5;
 }
 #main-block1-div1 #button2 {
   #border: 1px solid blue;
-  left: 243px;
-  padding-right: 0;
+  left: 70px;
+  #padding-right: 0;
+}
+
+#main-block1-div2 {
+  position: relative;
+  top: 47px;
+  background-color: blue;
+  #width: 95%;
+  max-width: 1006px;
+  height: 53px;
+  margin: 0 auto;
+  font: 12pt "Yrsa", serif;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: white;
+  padding: 10px 0px 0px 42px;
+
+  z-index: 1;
 }
 
 #eye {
   position:absolute;
-  top: 30px;
-  right: 128px;
+  top: 90px;
+  right: 165px;
   width: 243px;
   height: 250px;
   z-index: 5;
@@ -331,8 +381,8 @@ main:after{
 }
 #abstract {
   position:absolute;
-  top: 49px;
-  right: 43px;
+  top: 110px;
+  right: 80px;
   width: 230;
   height: 220;
   z-index: 4;
@@ -340,40 +390,33 @@ main:after{
   #background-size: cover;
 }
 
-#main-block1-div2 {
-  position: relative;
-  top: 27px;
-  background-color: blue;
-  width: 1006px;
-  height: 63px;
-  margin: 0 auto;
-  font: 12pt "Yrsa", serif;
-  font-weight: 500;
-  letter-spacing: 1.2px;
-  color: white;
-  padding: 18px 0px 0px 42px;
-  z-index: 1;
+#main-block2 {
+  width: 100vw;
+  max-width: 1080px;
+  min-width: 410px;
 }
 
-#main-block2 {
+#main-block2-div1 {
   #background-color: green;
   display: inline-block;
   width: 62.3%;
   float: left;
+  min-width: 410px;
 }
 
-#main-block3 {
-  #background-color: blue;
+#main-block2-div2 {
+  #background-color: yellow;
   display: inline-block;
   width: 37.7%;
+  #min-width: 350px;
 }
 
 footer {
-  #clear: both;
+
 }
 
 
-d#iv#pix {
+div#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
