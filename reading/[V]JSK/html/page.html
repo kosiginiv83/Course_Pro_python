@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx</title>
+	</head>
+	<body>
+		<p id="p1">Ничего</p>
+		<script>
+			var w1 = "javascript is awesome nah";
+			var w2 = [];
+			for (var i = 0; i < w1.length; i++) {
+				if (w1[i] == "a") {
+					w2[i] = "4";
+				} else if (w1[i] == "e") {
+					w2[i] = "3";
+				} else if (w1[i] == "i") {
+					w2[i] = "1";
+				} else if (w1[i] == "o") {
+					w2[i] = "0";
+				} else if (w1[i] == "s") {
+					w2[i] = "5";
+				} else {
+					w2[i] = w1[i];
+				}	
+			}
+			console.log(w2.join(''));
+		</script>
+	</body>
+</html>

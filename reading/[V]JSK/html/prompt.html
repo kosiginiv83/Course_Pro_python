@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx</title>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<canvas id="canvas" width="300" height="300"></canvas>
+		<script>
+			var word = pickWord();
+			var answerArray = setupAnswerArray(word);
+			var usedLetters = [];
+			var attempts = 20;
+			var remainingLetters =  word.length;
+			var err = 0;
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			ctx.lineWidth = 2;
+			ctx.strokeStyle = "Orange";
+			
+			while (remainingLetters > 0) {
+				attempts--;
+				showPlayerProgress(answerArray);
+				var guess = getGuess();
+				if (guess === null || attempts === 0) {
+					break;
+				} else if (guess.length !== 1) {
+				alert('Пожалуйста, введите одну букву.');
+				} else {
+					updateGameStatus (guess, word, answerArray);
+				}
+			}
+			finalMessage();
+			console.log(usedLetters);
+			//Функции--------------------------------------------------------
+			function pickWord () {
+				var words = ['программа', 'макака', 'прекрасный', 'оладушек', 
+					'рассвет', 'подорожник', 'прогресс'];
+				return words[Math.floor(Math.random()*words.length)];
+			};
+			function setupAnswerArray (word) {
+				answerArray = [];
+				for (var i = 0; i < word.length; i++) {
+					answerArray[i] = '_';
+				}
+				return answerArray;
+			};
+			function showPlayerProgress (answerArray) {
+				alert(answerArray.join(' '));
+			};
+			function getGuess () {
+				return guess = prompt("Угадайте букву или \
+нажмите Отмена для выхода из игры.").toLowerCase(); //Исключаем заглавные буквы.
+			};
+			function updateGameStatus (guess, word, answerArray) {
+				var checkErr = 0;
+				for (var j = 0; j <word.length; j++) {
+					if (word[j] === guess) {
+						if (usedLetters.indexOf(guess) == -1) {
+							remainingLetters--;
+							console.log(remainingLetters);
+							checkErr = 1;
+						}
+						answerArray[j] = guess;
+					}
+				}
+				if (checkErr === 0) {
+					err++;
+					console.log('err ' + err);
+					drawLos(err);
+				}
+				/*Добавляем вводимые буквы в массив, чтобы исключить победу за
+				счет многократного ввода одной и той же верной буквы.*/
+				usedLetters.push(guess);
+			};
+			function finalMessage () {
+				if (attempts != 0) {
+					alert('Отлично! Было загадано слово: ' + word);
+				} else {
+					alert('Ты лось');
+				}
+			};
+			//Рисуем лося.
+			function drawLos (err) {
+				ctx.beginPath();
+				if (err === 1) {
+					ctx.arc(150, 180, 40, 0, Math.PI*2, false);
+				} else if (err === 2) {
+					ctx.moveTo(160, 190);
+					ctx.arc(150, 190, 10, 0, Math.PI*2, false);
+				} else if (err === 3) {
+					ctx.moveTo(137, 170);
+					ctx.arc(130, 170, 8, 0, Math.PI*2, false);
+				} else if (err === 4) {
+					ctx.moveTo(177, 170);
+					ctx.arc(170, 170, 8, 0, Math.PI*2, false);
+				} else if (err === 5) {
+					ctx.moveTo(165, 200);
+					ctx.arc(150, 200, 15, 0, Math.PI, false);
+				} else if (err === 6) {
+					ctx.moveTo(180, 155);
+					ctx.lineTo(217, 118);
+				} else if (err === 7) {
+					ctx.moveTo(120, 155);
+					ctx.lineTo(85, 120);
+				} else if (err === 8) {
+					ctx.moveTo(155, 187);
+					ctx.arc(152, 187, 3, 0, Math.PI*2, false);
+				} else if (err === 9) {
+					ctx.moveTo(215, 145);
+					ctx.lineTo(190, 145);
+				} else if (err === 10) {
+					ctx.lineTo(190, 120);
+				} else if (err === 11) {
+					ctx.moveTo(85, 145);
+					ctx.lineTo(110, 145);
+				} else if (err === 12) {
+					ctx.lineTo(110, 120);
+				} else if (err === 13) {
+					ctx.moveTo(225, 135);
+					ctx.lineTo(200, 135);
+				} else if (err === 14) {
+					ctx.lineTo(200, 110);
+				} else if (err === 15) {
+					ctx.moveTo(75, 135);
+					ctx.lineTo(100, 135);
+				} else if (err === 16) {
+					ctx.lineTo(100, 110);
+				} else if (err === 17) {
+					ctx.moveTo(235, 125);
+					ctx.lineTo(210, 125);
+				} else if (err === 18) {
+					ctx.lineTo(210, 100);
+				} else if (err === 19) {
+					ctx.moveTo(65, 125);
+					ctx.lineTo(90, 125);
+				} else {
+					ctx.lineTo(90, 100);
+				}
+				$('html').delay(100);
+				ctx.stroke();
+				console.log('stroke ' + err);
+				$('html').delay(100);
+			};
+			//---------------------------------------------------------------
+		</script>
+	</body>
+</html>

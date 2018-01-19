@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx2</title>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<h1 id="heading">Кликни по мне для старта</h1>
+		<h2 id="stop">Остановить</h2>
+		<script>
+			$('#heading').offset( {top: 0, left: 0} );
+			$('#stop').offset( {top: 400, left: 400} );
+			var sost = 1;
+			var sdvL = 0;
+			var sdvT = 0;
+			ms = 150;
+			var klikov = 0;
+			glInval = 0;
+			b = 0;
+			
+			function edoffset () {
+				if (sost === 1) {
+					sdvL += 2;
+				} else if (sost === 2) {
+					sdvT += 2;
+				} else if (sost === 3) {
+					sdvL -= 2;
+				} else if (sost === 4) {
+					sdvT -= 2;
+				}
+				$('#heading').offset( {left: sdvL, top: sdvT} );
+				if (sdvL === 200 && sdvT === 0) {
+					sost = 2;
+				}
+				if (sdvT === 200 && sdvL === 200) {
+					sost = 3;
+				}
+				if (sdvL === 0 && sdvT === 200) {
+					sost = 4;
+				}
+				if (sdvT === 0 && sdvL === 0) {
+					sost = 1;
+				}
+			};
+			
+			$('#heading').click(driveUp);
+			function driveUp (event) {
+				if (b != 1) {
+					ms -= 20;
+					clInterval();
+					glInval = setInterval(edoffset, ms);
+					if (klikov === 0) {$('#heading').text('Кликов: ');}
+					$('#heading').text('Кликов: ' + klikov);
+					klikov++;
+					if (klikov === 11) {
+						$('#heading').text('Вы победили!');
+						clInterval();
+						b = 1;
+						//stopEx();
+					}
+				}
+			};
+			
+			function clInterval () {
+				clearInterval(glInval);
+			};
+			
+			$('#stop').click(stopEx);
+			function stopEx (event) {
+				clInterval();
+				$('#heading').hide();
+				$('#stop').hide();
+				if (b === 1) {$('body').append('<h1>Вы победили!</h1>'); }
+			};
+		</script>
+	</body>
+</html>

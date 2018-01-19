@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx7</title>
+	</head>
+	<body>
+		<canvas id="canvas" width="300" height="500"></canvas>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			ctx.strokeStyle = "grey";
+			var ballQuantity = 0;
+			var checkBallQ = 0;
+			
+			var Ball = function () {
+				this.x = Math.floor(Math.random()*canvas.width);
+				this.y = Math.floor(Math.random()*canvas.height);
+				this.xSpeed = 0;
+				this.ySpeed = 0;
+				this.color = colors[Math.floor(Math.random()*colors.length)];
+			};
+			
+			var colors =['red', 'blue', 'green', 'gold', 
+				'grey', 'orange', 'yellow', 'purple'];
+			var ball = [];
+			for (var i = 0; i < 10; i++) {
+				//ball[i] = new Ball();
+				ball.push(new Ball());
+			}
+			
+			var intId = setInterval(function () {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			for (var i = 0; i < ball.length; i++) {	
+				ball[i].draw();
+				ball[i].checkCollision();
+				ball[i].move();
+				ballQuantity = ball.length;
+			}
+			ctx.strokeRect(0, 0, canvas.width, canvas.height);
+			}, 30);
+			
+			Ball.prototype.draw = function () {
+				ctx.fillStyle = this.color;
+				circle(this.x, this.y, 5, true);
+				ctx.fill();
+			};
+			var circle = function (x, y, radius, fillCircle) {
+				ctx.beginPath();
+				ctx.arc(x, y, radius, 0, Math.PI*2, false);
+				if (fillCircle) {
+					ctx.fill();
+				} else {
+					ctx.stroke();
+				}
+			};
+			
+			Ball.prototype.move = function () {
+				this.xSpeed = this.rSpeed();
+				this.ySpeed = this.rSpeed();
+				this.x += this.xSpeed;
+				this.y += this.ySpeed;
+			};
+			
+			Ball.prototype.rSpeed = function () {
+				return (Math.floor(Math.random()*11 - 5));
+			};
+			
+			Ball.prototype.checkCollision = function () {
+				checkBallQ = 0;
+				if (this.x < 0 && this.xSpeed < 0) {
+					this.xSpeed = - this.xSpeed;
+					checkBallQ = 1;
+				}
+				if (this.xSpeed > 0 && this.x > canvas.width) {
+					this.xSpeed = - this.xSpeed;
+					checkBallQ = 1;
+				}
+				if (this.y < 0 && this.ySpeed < 0) {
+					this.ySpeed = - this.ySpeed;
+					checkBallQ = 1;
+				}
+				if (this.ySpeed > 0 && this.y > canvas.height) {
+					this.ySpeed = - this.ySpeed;
+					checkBallQ = 1;
+				}
+				if (ballQuantity < 100 && checkBallQ === 1) {
+					ball.push(new Ball());
+				}
+			};
+			
+			$("html").click(function() {
+				clearInterval(intId);
+			});
+		</script>
+	</body>
+</html>

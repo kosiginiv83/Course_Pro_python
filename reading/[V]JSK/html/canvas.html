@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx5</title>
+	</head>
+	<body>
+		<canvas id="canvas" width="300" height="300"></canvas>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			
+			ctx.lineWidth = 2;
+			ctx.strokeStyle = "Orange";
+			ctx.beginPath();
+			
+			ctx.arc(150, 180, 40, 0, Math.PI*2, false);
+			ctx.moveTo(160, 190);
+			ctx.arc(150, 190, 10, 0, Math.PI*2, false);
+			ctx.moveTo(137, 170);
+			ctx.arc(130, 170, 8, 0, Math.PI*2, false);
+			ctx.moveTo(177, 170);
+			ctx.arc(170, 170, 8, 0, Math.PI*2, false);
+			ctx.moveTo(165, 200);
+			ctx.arc(150, 200, 15, 0, Math.PI, false);
+			ctx.moveTo(180, 155);
+			ctx.lineTo(217, 118);
+			ctx.moveTo(120, 155);
+			ctx.lineTo(85, 120);
+			ctx.moveTo(155, 187);
+			ctx.arc(152, 187, 3, 0, Math.PI*2, false);
+			ctx.moveTo(215, 145);
+			ctx.lineTo(190, 145);
+			ctx.lineTo(190, 120);
+			ctx.moveTo(85, 145);
+			ctx.lineTo(110, 145);
+			ctx.lineTo(110, 120);
+			ctx.moveTo(225, 135);
+			ctx.lineTo(200, 135);
+			ctx.lineTo(200, 110);
+			ctx.moveTo(75, 135);
+			ctx.lineTo(100, 135);
+			ctx.lineTo(100, 110);
+			ctx.moveTo(235, 125);
+			ctx.lineTo(210, 125);
+			ctx.lineTo(210, 100);
+			ctx.moveTo(65, 125);
+			ctx.lineTo(90, 125);
+			ctx.lineTo(90, 100);
+			ctx.stroke();
+			
+			//ctx.fillRect(100, 0, 50, 50);
+			//ctx.lineWidth = 4;
+			//ctx.strokeRect(10, 250, 100, 20);
+			//ctx.strokeStyle = "Orange";
+			//ctx.arc(50, 50, 20, 0, Math.PI/2, false);
+			//ctx.beginPath();
+			//ctx.moveTo(250, 10);
+			//ctx.lineTo(270, 10);
+			//ctx.stroke();
+			//ctx.fill();
+		</script>
+	</body>
+</html>

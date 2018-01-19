@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx2</title>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<h1 id="heading">Прювет Волку!</h1>
+		<script>
+			sost = 1;
+			sdvL = 0;
+			sdvT = 0;
+			sdvig = function () {
+				if (sdvL === 200 && sdvT === 0) {
+					sost = 2;
+				}
+				if (sdvT === 200 && sdvL === 200) {
+					sost = 3;
+				}
+				if (sdvL === 0 && sdvT === 200) {
+					sost = 4;
+				}
+				if (sdvT === 0 && sdvL === 0) {
+					sost = 1;
+				}
+			};
+			//Вызов функции offset---------------
+			function edoffset () {
+				if (sost === 1) {
+					sdvL++;
+				} else if (sost === 2) {
+					sdvT++;
+				} else if (sost === 3) {
+					sdvL--;
+				} else if (sost === 4) {
+					sdvT--;
+				}
+				$('#heading').offset( {left: sdvL, top: sdvT} );
+				if ((sdvL === 200 && sdvT === 0)||(sdvT === 200 && sdvL === 200)||
+					(sdvL === 0 && sdvT === 200)||(sdvT === 0 && sdvL === 0)) {
+					sdvig();
+				}
+			};
+			//-----------------------------------
+			//Вызов функции каждые __мс
+			intervalId = setInterval(edoffset, 10);
+			//-----------------------------------
+			//Остановка анимации по клику.-------
+			$('html').click(stopEx);
+			function stopEx (event) {
+				clearInterval(intervalId);
+			};
+			//-----------------------------------
+		</script>
+	</body>
+</html>

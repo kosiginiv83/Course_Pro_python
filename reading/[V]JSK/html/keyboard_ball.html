@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>xxx9</title>
+	</head>
+	<body>
+		<canvas id="canvas" width="400" height="400"></canvas>
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			var width = canvas.width;
+			var height = canvas.height;
+			ctx.strokeStyle ="orange";
+			ctx.fillStyle ="green";
+			var vspeed = 5;
+			
+			var circle = function (x, y, radius, fillCircle) {
+				ctx.beginPath();
+				ctx.arc(x, y, radius, 0, Math.PI*2, false);
+				if (fillCircle) {
+					ctx.fill();
+				} else {
+					ctx.stroke();
+				}
+			};
+			
+			var Ball = function () {
+				this.x = width/2;
+				this.y = height/2;
+				this.xSpeed = 0;
+				this.ySpeed = 0;
+				this.radius = 10
+			};
+			
+			Ball.prototype.move = function () {
+				this.x += this.xSpeed;
+				this.y += this.ySpeed;
+				ball.checkCol();	
+			};
+			
+			Ball.prototype.draw = function () {
+				circle(this.x, this.y, this.radius, true);
+			};
+			
+			Ball.prototype.setDirection = function (keyName) {
+				if (keyName === "up") {
+					this.xSpeed = 0;
+					this.ySpeed = -vspeed;
+				} else if (keyName === "down") {
+					this.xSpeed = 0;
+					this.ySpeed = vspeed;
+				} else if (keyName === "left") {
+					this.xSpeed = -vspeed;
+					this.ySpeed = 0;
+				} else if (keyName === "right") {
+					this.xSpeed = vspeed;
+					this.ySpeed = 0;
+				} else if (keyName === "stop") {
+					this.xSpeed = 0;
+					this.ySpeed = 0;
+				}
+				if (vspeed < 1) {vspeed = 1}
+				if (vspeed > 20) {vspeed = 20}
+			};
+			
+			Ball.prototype.checkCol = function () {
+				if (this.x < this.radius || this.x > width-this.radius) {
+					this.xSpeed = - this.xSpeed;
+				}
+				if (this.y < this.radius || this.y > height-this.radius) {
+					this.ySpeed = - this.ySpeed;
+				}
+				
+				if (this.x < 0) {
+					this.x = width;
+				} else if (this.x > width) {
+					this.x = 0;
+				}
+				if (this.y < 0) {
+					this.y = height;
+				} else if (this.y > height) {
+					this.y = 0;
+				}
+			};
+			
+			Ball.prototype.changeSpeed = function(vspeed) {
+				if (vspeed < 1) {vspeed = 1}
+				if (vspeed > 20) {vspeed = 20}
+				if (this.xSpeed > 0) {
+					this.xSpeed = vspeed;
+				} else if (this.xSpeed < 0) {
+					this.xSpeed = -vspeed;
+				} else if (this.ySpeed > 0) {
+					this.ySpeed = vspeed;
+				} else if (this.ySpeed < 0) {
+					this.ySpeed = -vspeed;
+				}				
+			};
+			
+			var ball = new Ball();
+			
+			var keyActions = {
+				32: "stop",
+				37: "left",
+				38: "up",
+				39: "right",
+				40: "down",
+				97: 1,
+				98: 2,
+				99: 3,
+				100: 4,
+				101: 5,
+				102: 6,
+				103: 7,
+				104: 8,
+				105: 9,
+				90: "z",
+				88: "x",
+				67: "c",
+				86: "v"
+			};
+			
+			$("body").keydown(function (event) {
+				keyName = keyActions[event.keyCode];
+				if (keyName >= 1 && keyName <= 9) {
+					vspeed = keyName;
+					ball.changeSpeed(vspeed);
+				} else if (keyName === "z") {
+					ball.changeSpeed(--vspeed);
+				} else if (keyName === "x") {
+					ball.changeSpeed(++vspeed);
+				} else if (keyName === "c") {
+					ball.radius--;
+					if (ball.radius < 1) {ball.radius = 1}
+				} else if (keyName === "v") {
+					ball.radius++;
+					if (ball.radius > 30) {ball.radius = 30}
+				}
+				ball.setDirection(keyName);
+			});
+			
+			setInterval(function () {
+				ctx.clearRect(0, 0, width, height);
+				ball.draw();
+				ball.move();
+				ctx.strokeRect(0, 0, width, height);
+			}, 30);
+		</script>
+	</body>
+</html>
