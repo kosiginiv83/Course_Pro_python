@@ -524,21 +524,23 @@ main:after{
 /* Базовый контейнер табов */
 .tabs {
 	#min-width: 320px;
-	#max-width: 800px;
+	max-width: 330px;
+  min-height: 330px;
 	padding: 0px;
 	margin: 0 auto;
+  margin-top: 50px;
 }
 /* Стили секций с содержанием */
 .tabs>section {
 	display: none;
 	padding: 5px;
-	background: #fff;
+	background: blue;
 	border: 1px solid #ddd;
 }
-.tabs>section>p {
+.tabs>section p {
 	margin: 0 0 15px;
 	line-height: 1.5;
-	color: #383838;
+	color: white;
 	/* прикрутим анимацию */
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
@@ -573,15 +575,16 @@ main:after{
 /* Стили переключателей вкладок (табов) */
 .tabs>label {
 	display: inline-block;
-	margin: 0 0 -1px;
-	padding: 15px 25px;
+	#margin: 0 0 -1px;
+	#padding: 15px 25px;
 	font-weight: 600;
 	text-align: center;
 	color: white;
-	border: 0px solid #ddd;
-	border-width: 1px 1px 1px 1px;
+	#border: 0px solid #ddd;
+	#border-width: 1px 1px 1px 1px;
 	background: brown;
-	border-radius: 3px 3px 0 0;
+	#border-radius: 3px 3px 0 0;
+  width: 33%;
 }
 /* Шрифт-иконки от Font Awesome в формате Unicode
 .tabs>label:before {
@@ -616,7 +619,7 @@ main:after{
   color: white;
 }
 /* Активация секций с помощью псевдокласса :checked */
-#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3 {
 	display: block;
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -629,7 +632,7 @@ footer {
 /*=============FOOTER-BLOCK1=================*/
 /*=============FOOTER-BLOCK2=================*/
 
-d#iv#pix {
+div#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
