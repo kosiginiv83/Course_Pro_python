@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Average|Crimson+Text|\
             Quattrocento|Suravaram|Taviraj|Yrsa:400,500,700,900');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 
 /*
 общий бэкграунд - f8eedf (светло-бежевый) - opacity 100
@@ -24,6 +24,7 @@ body {
   margin: 0 auto;
 }
 
+/*================================HEADER=============================*/
 header {
   position: fixed;
   width: 100%;
@@ -44,6 +45,7 @@ header:after {
   #border: 3px solid green;
 }
 
+/*=============HEADER-BLOCK1=================*/
 #header-block1 {
   #position: relative;
   #height: 100px;
@@ -104,6 +106,7 @@ header:after {
   background-image: url("pics/call.png");
 }
 
+/*=============HEADER-BLOCK2=================*/
 #header-block2 {
   position: relative;
   #height: 59px;
@@ -248,6 +251,8 @@ header:after {
   margin-right: 5px;
 }
 
+
+/*================================MAIN=============================*/
 main {
   width: 100%;
   #width: 100vw;
@@ -270,6 +275,7 @@ main:after{
   #padding-bottom: 25px;
 }
 
+/*=============MAIN-BLOCK1=================*/
 #main-block1 {
   position: relative;
   #background-color: #f8eedf;
@@ -390,12 +396,14 @@ main:after{
   #background-size: cover;
 }
 
+/*=============MAIN-BLOCK2=================*/
 #main-block2 {
   width: 100vw;
   max-width: 1080px;
   min-width: 410px;
 }
 
+/*======MAIN-BLOCK2-DIV1=====*/
 #main-block2-div1 {
   #background-color: green;
   display: inline-block;
@@ -404,6 +412,85 @@ main:after{
   min-width: 410px;
 }
 
+#main-block2-div1 * {
+  #border: 1px solid red;
+}
+
+#main-block2-div1 h2 {
+  display: block;
+  margin-top: 43px;
+  padding: 0px 0px 0px 36px;
+  font: 21pt "Yrsa", serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: -3px;
+  color: blue;
+}
+
+#main-block2-div1 article {
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+.blog h3 {
+  margin-top: 0px;
+  padding: 0px 0px 0px 36px;
+  font: 21pt "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.45px;
+  color: black;
+}
+
+.blog h4 {
+  margin-top: -23px;
+  padding: 0px 0px 0px 36px;
+  #font: 9pt "Montserrat", sans-serif;
+  font: 12pt "Yrsa", serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: orange;
+  font-style: oblique;
+}
+
+.blog h4 span {
+  font-style: normal;
+}
+
+.blog-img {
+  width: 580px;
+  height: 138px;
+  background-size: cover;
+  margin: -12px 0 0 37px;
+}
+#main-block2-div1-divA {
+  background-image: url("pics/map.jpg");
+}
+#main-block2-div1-divB {
+  background-image: url("pics/masks.jpg");
+}
+
+.blog p, a {
+  max-width: 580px;
+  margin-top: 12px;
+  padding: 0px 0px 0px 36px;
+  font: 9pt/14pt "Montserrat", sans-serif;
+  #font: 12pt "Yrsa", serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  word-spacing: -0.5px;
+  color: black;
+}
+.blog a {
+  padding: 0 0 0 8px;
+  color: blue;
+  font-weight: 700;
+  text-decoration: none;
+}
+.blog a:hover {
+  color: red;
+}
+
+/*======MAIN-BLOCK2-DIV2=====*/
 #main-block2-div2 {
   #background-color: yellow;
   display: inline-block;
@@ -411,12 +498,15 @@ main:after{
   #min-width: 350px;
 }
 
+
+/*================================FOOTER=============================*/
 footer {
 
 }
+/*=============FOOTER-BLOCK1=================*/
+/*=============FOOTER-BLOCK2=================*/
 
-
-div#pix {
+di#v#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
