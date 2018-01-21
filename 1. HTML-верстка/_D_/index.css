@@ -721,7 +721,7 @@ footer {
   margin: 10px 45px 0 0px;
   padding: 10px 10px 10px 10px;
   #border: 1px solid red;
-  background-color: yellow;
+  #background-color: yellow;
 }
 #footer-block1-div3 {
   margin-right: 10px;
@@ -739,6 +739,10 @@ footer {
 #footer-block1-div3 h3 {
   letter-spacing: 1.7px;
   word-spacing: -2px;
+}
+
+.footer-button {
+
 }
 
 .footer-projects {
@@ -771,6 +775,15 @@ footer {
   height: 67px;
 }
 
+#footer-block2 p {
+  display: inline-block;
+  color: white;
+}
+
+#footer-block2 a {
+  display: inline-block;
+  color: white;
+}
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 div#pix {
