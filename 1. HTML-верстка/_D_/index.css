@@ -275,6 +275,10 @@ main:after{
   #padding-bottom: 25px;
 }
 
+main section {
+  #border: 1px red solid;
+}
+
 /*=============MAIN-BLOCK1=================*/
 #main-block1 {
   position: relative;
@@ -516,7 +520,7 @@ main:after{
   #background-color: yellow;
   display: inline-block;
   width: 37.7%;
-  #min-width: 350px;
+  min-width: 380px;
   z-index: 20;
 }
 
@@ -606,32 +610,34 @@ main:after{
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-#main-block2-div2-article2 {
+.main-block2-article {
   margin: 32px 0px 0px 0px;
-  padding: 0px 0px 0px 40px;
+  padding: 0px 0px 11px 40px;
 }
 
-#main-block2-div2-article2 h3 {
+.h3 {
   #padding: 0px 0px 0px 0px;
   margin: 10px 0px 0px 1px;
   font: 19pt "Yrsa", serif;
   font-weight: 600;
-  letter-spacing: 2.6px;
+  letter-spacing: 2.4px;
   word-spacing: -3px;
   color: blue;
 }
 
 #who {
-  max-width: 330px;
+  max-width: 327px;
+  #min-width: 380px;
   height: 100px;
   background-size: cover;
-  margin: 20px 0 0 0px;
+  margin: 20px 0 0 3px;
   background-image: url("pics/rabbit.jpg");
   border: 5px solid orange;
 }
 
 #main-block2-div2-article2 p, a {
   max-width: 330px;
+  #min-width: 380px;
   margin: 17px 0 0 1px;
   padding: 0px 0px 0px 0px;
   font: 9pt/14pt "Montserrat", sans-serif;
@@ -653,15 +659,101 @@ main:after{
   color: red;
 }
 
+#main-block2-div2-article3 div {
+  display: inline-block;
+  width: 145px;
+  height: 138px;
+  background-size: cover;
+  margin: 20px 30px 0 3px;
+  border: 5px solid orange;
+}
+#sponsor1 {
+  background-image: url("pics/nike.jpg");
+}
+#sponsor2 {
+  background-image: url("pics/adidas.jpg");
+  margin-right: 10px !important;
+}
 
 /*================================FOOTER=============================*/
 footer {
+  width: 100%;
+  #width: 100vw;
+  position: relative;
+  #top: 138px;
+  max-width: 1080px;
+  min-width: 410px;
+  min-height: 485px;
+  #background-color: green;
+  margin: 0 auto;
+  margin-top: 35px;
+  #right: 0px;
+  #margin-bottom: 35px;
+}
+
+
+/*=============FOOTER-BLOCK1=================*/
+.footer {
+  width: 100vw;
+  max-width: 1080px;
+  min-width: 410px;
+}
+
+#footer-block1 {
+  background-color: #40312a;
+  padding: 25px 0px 20px 25px;
+}
+
+#footer-block1:after{
+	content: "";
+	width: 100%;
+	display: block;
+	clear: both;
+  #padding-bottom: 25px;
+}
+
+.footer-div {
+  width: 30%;
+  float: left;
+  min-width: 300px;
+  margin: 10px 45px 0 0px;
+  padding: 10px 10px 10px 10px;
+  #border: 1px solid red;
+  background-color: yellow;
+}
+#footer-block1-div3 {
+  margin-right: 10px;
+}
+
+.footer-projects {
+  width: 50px;
+  height: 50px;
+  border: 5px solid orange;
+}
+#sky {
+  background-image: url("pics/sky.jpg");
+}
+#choco {
+  background-image: url("pics/choco.jpg");
+}
+#pink {
+  background-image: url("pics/pink.jpg");
+}
+#arm {
+  background-image: url("pics/arm.jpg");
+}
+
+
+/*=============FOOTER-BLOCK2=================*/
+#footer-block2 {
+  background-color: blue;
+  display: inline-block;
 
 }
-/*=============FOOTER-BLOCK1=================*/
-/*=============FOOTER-BLOCK2=================*/
 
-div#pix {
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+d#iv#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
