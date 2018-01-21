@@ -677,14 +677,14 @@ main section {
 
 /*================================FOOTER=============================*/
 footer {
-  width: 100%;
-  #width: 100vw;
+  #width: 100%;
+  width: 100vw;
   position: relative;
   #top: 138px;
   max-width: 1080px;
   min-width: 410px;
-  min-height: 485px;
-  #background-color: green;
+  #min-height: 485px;
+  background-color: green;
   margin: 0 auto;
   margin-top: 35px;
   #right: 0px;
@@ -694,14 +694,15 @@ footer {
 
 /*=============FOOTER-BLOCK1=================*/
 .footer {
-  width: 100vw;
+  #width: 100vw;
+  width: 100%;
   max-width: 1080px;
   min-width: 410px;
 }
 
 #footer-block1 {
   background-color: #40312a;
-  padding: 25px 0px 20px 25px;
+  padding: 15px 0px 20px 25px;
 }
 
 #footer-block1:after{
@@ -716,6 +717,7 @@ footer {
   width: 30%;
   float: left;
   min-width: 300px;
+  min-height: 375px;
   margin: 10px 45px 0 0px;
   padding: 10px 10px 10px 10px;
   #border: 1px solid red;
@@ -725,9 +727,25 @@ footer {
   margin-right: 10px;
 }
 
+#footer-block1-div1 h3 {
+  letter-spacing: 2.4px;
+  word-spacing: -2px;
+}
+#footer-block1-div2 h3 {
+  margin-left: 5px;
+  letter-spacing: 2px;
+  word-spacing: -2px;
+}
+#footer-block1-div3 h3 {
+  letter-spacing: 1.7px;
+  word-spacing: -2px;
+}
+
 .footer-projects {
-  width: 50px;
-  height: 50px;
+  display: inline-block;
+  margin: 19px 12px -4px 5px;
+  width: 133px;
+  height: 96px;
   border: 5px solid orange;
 }
 #sky {
@@ -735,12 +753,14 @@ footer {
 }
 #choco {
   background-image: url("pics/choco.jpg");
+  margin-right: 0px;
 }
 #pink {
   background-image: url("pics/pink.jpg");
 }
 #arm {
   background-image: url("pics/arm.jpg");
+  margin-right: 0px;
 }
 
 
@@ -748,12 +768,12 @@ footer {
 #footer-block2 {
   background-color: blue;
   display: inline-block;
-
+  height: 67px;
 }
 
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-d#iv#pix {
+div#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
