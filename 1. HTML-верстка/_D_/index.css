@@ -520,109 +520,138 @@ main:after{
   z-index: 20;
 }
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/* Базовый контейнер табов */
-.tabs {
-	#min-width: 320px;
-	max-width: 330px;
-  min-height: 330px;
-	padding: 0px;
-	margin: 0 auto;
-  margin-top: 50px;
+#main-block2-div2 article {
+  #border: 1px solid red;
 }
-/* Стили секций с содержанием */
+
+#main-block2-div2-article1 {
+  margin: 51px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.tabs {
+	min-width: 335px;
+	max-width: 335px;
+  #min-height: 330px;
+	padding: 0 0 0 6px;
+	margin: 20px auto;
+  #margin-top: 20px;
+  #margin-left: 10px;
+}
+
 .tabs>section {
 	display: none;
-	padding: 5px;
+  margin: -1px 0 0 0;
+	padding: 12px 0 0 12px;
 	background: blue;
 	border: 1px solid #ddd;
+  border-top: none;
+  min-height: 160px;
 }
-.tabs>section p {
-	margin: 0 0 15px;
-	line-height: 1.5;
-	color: white;
-	/* прикрутим анимацию */
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeIn;
-	animation-name: fadeIn;
-}
-/* Описываем анимацию свойства opacity */
 
-@-webkit-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+.tabs>section p {
+	margin: 0 0 0 0;
+  padding: 6px 0 0 1px;
+	#line-height: 1.3;
+  font: 9pt/14pt "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+	color: white;
 }
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-/* Прячем чекбоксы */
+
 .tabs>input {
 	display: none;
 	position: absolute;
 }
-/* Стили переключателей вкладок (табов) */
+
 .tabs>label {
 	display: inline-block;
-	#margin: 0 0 -1px;
-	#padding: 15px 25px;
-	font-weight: 600;
+	#margin: 0px -4px -3px -3px;
+  margin: 0px -4px 0px 0px;
+	#padding: 13px 13px 5px 17px;
+  padding: 13px 13px 5px 13px;
+  font: 15pt "Yrsa", serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 	text-align: center;
 	color: white;
-	#border: 0px solid #ddd;
+	#border: 1px solid green;
 	#border-width: 1px 1px 1px 1px;
 	background: brown;
 	#border-radius: 3px 3px 0 0;
-  width: 33%;
+  width: 32.5%;
+  border-bottom: 1px solid #fff;
 }
-/* Шрифт-иконки от Font Awesome в формате Unicode
-.tabs>label:before {
-	font-family: fontawesome;
-	font-weight: normal;
-	margin-right: 10px;
-}
-.tabs>label[for*="1"]:before {
-	content: "\f19a";
-}
-.tabs>label[for*="2"]:before {
-	content: "\f17a";
-}
-.tabs>label[for*="3"]:before {
-	content: "\f13b";
-}
-.tabs>label[for*="4"]:before {
-	content: "\f13c";
-}*/
-/* Изменения стиля переключателей вкладок при наведении */
-
 .tabs>label:hover {
 	color: #888;
 	cursor: pointer;
 }
-/* Стили для активной вкладки */
+
 .tabs>input:checked+label {
 	color: #555;
-	border-top: 1px solid #009933;
-	border-bottom: 1px solid #fff;
+  #padding: 13px 13px 13px 13px;
+  #margin: 0px 0px 0px 0px;
+	#border-top: 1px solid #009933;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+	border-bottom: none;
 	background: blue;
   color: white;
+  width: 35%;
 }
-/* Активация секций с помощью псевдокласса :checked */
+
 #tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3 {
 	display: block;
 }
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#main-block2-div2-article2 {
+  margin: 32px 0px 0px 0px;
+  padding: 0px 0px 0px 40px;
+}
+
+#main-block2-div2-article2 h3 {
+  #padding: 0px 0px 0px 0px;
+  margin: 10px 0px 0px 1px;
+  font: 19pt "Yrsa", serif;
+  font-weight: 600;
+  letter-spacing: 2.6px;
+  word-spacing: -3px;
+  color: blue;
+}
+
+#who {
+  max-width: 330px;
+  height: 100px;
+  background-size: cover;
+  margin: 20px 0 0 0px;
+  background-image: url("pics/rabbit.jpg");
+  border: 5px solid orange;
+}
+
+#main-block2-div2-article2 p, a {
+  max-width: 330px;
+  margin: 17px 0 0 1px;
+  padding: 0px 0px 0px 0px;
+  font: 9pt/14pt "Montserrat", sans-serif;
+  #font: 12pt "Yrsa", serif;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  word-spacing: -0.5px;
+  color: black;
+  #border: 1px solid red;
+}
+#main-block2-div2-article2 a {
+  padding: 0 0 0 3px;
+  word-spacing: 0px;
+  color: blue;
+  font-weight: 700;
+  text-decoration: none;
+}
+#main-block2-div2-article2 a:hover {
+  color: red;
+}
 
 
 /*================================FOOTER=============================*/
