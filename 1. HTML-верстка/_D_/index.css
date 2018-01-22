@@ -477,7 +477,7 @@ main section {
   background-image: url("pics/masks.jpg");
 }
 
-.blog p, a {
+.blog p, .blog a {
   max-width: 580px;
   margin-top: 12px;
   padding: 0px 0px 0px 36px;
@@ -635,7 +635,7 @@ main section {
   border: 5px solid orange;
 }
 
-#main-block2-div2-article2 p, a {
+#main-block2-div2-article2 p, #main-block2-div2-article2 a {
   max-width: 330px;
   #min-width: 380px;
   margin: 17px 0 0 1px;
@@ -714,6 +714,7 @@ footer {
 }
 
 .footer-div {
+  position: relative;
   width: 30%;
   float: left;
   min-width: 300px;
@@ -722,6 +723,9 @@ footer {
   padding: 10px 10px 10px 10px;
   #border: 1px solid red;
   #background-color: yellow;
+}
+#footer-block1-div {
+
 }
 #footer-block1-div3 {
   margin-right: 10px;
@@ -742,7 +746,7 @@ footer {
 }
 
 .footer-form {
-  margin: 8px 0 0px 0;
+  margin: 8px 0 50px 0;
 
 }
 
@@ -781,7 +785,44 @@ footer {
   margin-right: 0;
 }
 
+#footer-block1-div3 h3 {
+  padding-bottom: 8px;
+}
+
+.footer-twitter {
+  padding: 10px 0 0px 0;
+  font: 9pt/14pt "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  #word-spacing: -0.5px;
+  color: white;
+}
+.footer-twitter a {
+  color: blue;
+  text-decoration: none;
+  font-style: oblique;
+}
+
 .footer-button {
+  position: absolute;
+  right: 21px;
+  bottom: 30px;
+  width: 119px;
+  height: 32px;
+  font: 16pt "Yrsa", serif;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: white;
+  background-color: #febf5d;
+  text-align: center;
+  padding-top: 5px;
+}
+#submit {
+  right: 17px;
+  letter-spacing: 0.8px;
+}
+#portfolio {
+  right: 15px;
 
 }
 
