@@ -741,6 +741,46 @@ footer {
   word-spacing: -2px;
 }
 
+.footer-form {
+  margin: 8px 0 0px 0;
+
+}
+
+.footer-form input {
+  padding: 0 12px;
+  height: 38px;
+  width: 120px;
+  margin: 10px 5px 12px 0;
+  font: 12pt "Yrsa", serif;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  #word-spacing: -3px;
+}
+
+.footer-form textarea {
+  min-height: 112px;
+  padding: 12px;
+  #margin: 10px 5px 12px 0;
+  font: 12pt "Yrsa", serif;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  #word-spacing: -3px;
+}
+
+::-webkit-input-placeholder {color:blue;}
+::-moz-placeholder          {color:blue;}
+:-moz-placeholder           {color:blue;}
+:-ms-input-placeholder      {color:blue;}
+
+#surname {
+  width: 162px;
+  margin-right: 0;
+}
+#email {
+  width: 290px;
+  margin-right: 0;
+}
+
 .footer-button {
 
 }
