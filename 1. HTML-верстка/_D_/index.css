@@ -635,7 +635,8 @@ main section {
   border: 5px solid orange;
 }
 
-#main-block2-div2-article2 p, #main-block2-div2-article2 a {
+#main-block2-div2-article2 p, #main-block2-div2-article2
+ a {
   max-width: 330px;
   #min-width: 380px;
   margin: 17px 0 0 1px;
@@ -857,13 +858,26 @@ footer {
 }
 
 #footer-block2 p {
+  margin: 24px 37px;
   display: inline-block;
+  font: 11.5pt "Yrsa", serif;
+  font-weight: 500;
+  letter-spacing: 0.6px;
   color: white;
 }
 
 #footer-block2 a {
   display: inline-block;
   color: white;
+  text-decoration: none;
+  font: 11pt "Yrsa", serif;
+  padding-left: 2.7px;
+}
+
+#footer-block2 #footer-links {
+  position: absolute;
+  right: 0px;
+  bottom: 1px;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
