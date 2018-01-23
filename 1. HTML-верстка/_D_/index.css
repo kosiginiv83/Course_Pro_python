@@ -28,8 +28,6 @@ body {
 header {
   position: fixed;
   width: 100%;
-
-  #margin-top: -21px;
   z-index: 10;
   top: 0;
   max-width: 1080px;
@@ -42,25 +40,18 @@ header:after {
 	width: 100%;
 	display: block;
 	clear: both;
-  #border: 3px solid green;
 }
 
 /*=============HEADER-BLOCK1=================*/
 #header-block1 {
-  #position: relative;
-  #height: 100px;
   background-color: #febf5d;
-  #margin-top: -19px;
   padding: 5px 0 0px 0;
 }
 
 #header-block1 h1 {
   position: relative;
   display: inline-block;
-  #padding: 0 0 0 37px;
-  #top: -8px;
   left: 37px;
-  #margin: 0 auto;
   font: 25pt "Yrsa", serif;
   font-weight: 500;
   letter-spacing: 4.4px;
@@ -73,21 +64,14 @@ header:after {
   top: 33px;
   right: 17px;
   margin-left: 250px;
-  #margin-top: 30px;
-  #border: 1px solid red;
-  #margin: 33px 0 0 656px;
-  #overflow: auto;
 }
 
 #header-block1 div {
-  #position: relative;
   display: inline-block;
-  #border: 1px solid blue;
   margin-right: 20.5px;
 }
 
 .icon {
-  #display: inline-block;
   background-size: cover;
   width: 32px;
   height: 32px;
@@ -109,14 +93,9 @@ header:after {
 /*=============HEADER-BLOCK2=================*/
 #header-block2 {
   position: relative;
-  #height: 59px;
   width: 100%;
   background-color: #40312a;
-  #padding-top: 0px;
   padding-bottom: 5px;
-  #border: 3px solid green;
-  #text-align: right;
-
 }
 
 #header-block2:after {
@@ -124,36 +103,25 @@ header:after {
 	width: 100%;
 	display: block;
 	clear: both;
-  #border: 3px solid green;
-  #margin-bottom: 40px;
 }
 
 #menu {
   position: relative;
   display: inline-block;
-  #border: 1px solid red;
   margin-left: 35px;
-  #margin-right: 300px;
   height: 100%;
-  #padding: auto auto;
   padding-top: 2px;
-  #right: 0px;
-  #float: left;
   width: 95%;
 }
 
 #header-block2 div p {
-  #position: relative;
   display: inline-block;
-  #border: 1px solid blue;
   margin-right: 16.1px;
   margin-top: 18px;
   font: 11.8pt "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 0.79px;
   color: white;
-  #border: 1px solid red;
-
 }
 
 #last-menu-item {
@@ -164,20 +132,18 @@ header:after {
 #search {
   display: inline-block;
   position: absolute;
-  #border: 1px solid red;
-  #margin: 0 0 0 280px;
-  #margin-left: 170px;
   right: 20px;
-  #left: 270px;
   z-index: 11;
   margin-top: 0px;
-  #width: 40%;
 }
 
 #header-block2 div#search p {
   margin-right: 7px;
   margin-left: 0px;
+}
 
+#search input {
+  border-radius: 2px;
 }
 
 .form {
@@ -195,17 +161,12 @@ header:after {
 }
 .form-field input {
 	border: 0;
-	#background: 0;
   background-color: blue;
 	height: 26px;
 	width: 200px;
-	#display: block;
 	padding-right: 30px;
   padding-left: 5px;
   padding-top: 5px;
-	#border: 1px solid #333;
-	#box-sizing: border-box;
-	#text-indent: 10px;
 	position: relative;
 	z-index: 5;
 }
@@ -219,8 +180,6 @@ header:after {
 }
 .form-button button {
 	border: 0;
-	#background: red;
-	#display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -231,7 +190,6 @@ header:after {
 	appearance: none;
 	-webkit-appearance: none;
 	cursor: pointer;
-	#color: white;
   margin: auto;
   background-color: blue;
 }
@@ -255,16 +213,11 @@ header:after {
 /*================================MAIN=============================*/
 main {
   width: 100%;
-  #width: 100vw;
   position: relative;
-  #top: 138px;
   max-width: 1080px;
   min-width: 410px;
-
   margin: 0 auto;
   margin-top: 150px;
-  #right: 0px;
-  #margin-bottom: 25px;
 }
 
 main:after{
@@ -272,31 +225,24 @@ main:after{
 	width: 100%;
 	display: block;
 	clear: both;
-  #padding-bottom: 25px;
 }
 
 main section {
-  #border: 1px red solid;
+
 }
 
 /*=============MAIN-BLOCK1=================*/
 #main-block1 {
   position: relative;
-  #background-color: #f8eedf;
   background-color: grey;
-  #height: 403px;
-  #margin: 0 auto;
-  #width: 100%;
-  #width: auto;
   width: 100vw;
   padding-bottom: 100px;
-  #right: 0;
   min-height: 400px;
   max-width: 1080px;
 }
 
 #main-block1 div {
-  #border: 1px solid red;
+
 }
 
 #main-block1-div1 article {
@@ -310,13 +256,9 @@ main section {
   position: relative;
   top: 60px;
   background-color: #40312a;
-  #background-color: green;
-  #width: 95%;
   max-width: 1006px;
-  #height: 260px;
   margin: 0 auto;
   z-index: 2;
-  #width: auto;
 }
 
 #main-block1-div1 h2 {
@@ -327,22 +269,18 @@ main section {
   color: blue;
 }
 #main-block1-div1 p {
-  #width: 62.3%;
   padding: 0px 22vw 0px 42px;
-  #margin: 0 430px 0 0;
   margin-top: -6px;
   font: 10pt "Montserrat", sans-serif;
   font-weight: 400;
   letter-spacing: -0.25px;
   line-height: 1.36;
   color: white;
-  #border: 1px solid red;
   width: 88vw;
   max-width: 840px;
 }
 
 #main-block1-div1 .main-block1-button {
-  #border: 1px solid red;
   display: inline-block;
   position: relative;
   top: 34px;
@@ -357,11 +295,10 @@ main section {
   font-weight: 600;
   letter-spacing: 0.4px;
   z-index: 5;
+  border-radius: 5px;
 }
 #main-block1-div1 #button2 {
-  #border: 1px solid blue;
   left: 70px;
-  #padding-right: 0;
 }
 
 #main-block1-div2 {
@@ -411,17 +348,10 @@ main section {
 
 /*======MAIN-BLOCK2-DIV1=====*/
 #main-block2-div1 {
-  #background-color: green;
   position: relative;
-  #display: inline-block;
   width: 62.3%;
   float: left;
   min-width: 410px;
-  #margin-right: 10px;
-}
-
-#main-block2-div1 * {
-  #border: 1px solid red;
 }
 
 #main-block2-div1 h2 {
@@ -452,7 +382,6 @@ main section {
 .blog h4 {
   margin-top: -23px;
   padding: 0px 0px 0px 36px;
-  #font: 9pt "Montserrat", sans-serif;
   font: 12pt "Yrsa", serif;
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -469,6 +398,7 @@ main section {
   height: 138px;
   background-size: cover;
   margin: -12px 0 0 37px;
+  border-radius: 5px;
 }
 #main-block2-div1-divA {
   background-image: url("pics/map.jpg");
@@ -482,7 +412,6 @@ main section {
   margin-top: 12px;
   padding: 0px 0px 0px 36px;
   font: 9pt/14pt "Montserrat", sans-serif;
-  #font: 12pt "Yrsa", serif;
   font-weight: 600;
   letter-spacing: 0.3px;
   word-spacing: -0.5px;
@@ -502,9 +431,7 @@ main section {
   position: absolute;
   bottom: -27px;
   right: 54px;
-  #margin-top: -23px;
   padding: 5px 0px 0px 0px;
-  #font: 9pt "Montserrat", sans-serif;
   width: 116px;
   height: 30px;
   font: 14pt "Yrsa", serif;
@@ -517,7 +444,6 @@ main section {
 
 /*======MAIN-BLOCK2-DIV2=====*/
 #main-block2-div2 {
-  #background-color: yellow;
   display: inline-block;
   width: 37.7%;
   min-width: 380px;
@@ -525,23 +451,20 @@ main section {
 }
 
 #main-block2-div2 article {
-  #border: 1px solid red;
+
 }
 
 #main-block2-div2-article1 {
   margin: 51px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  padding: 0px;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .tabs {
 	min-width: 335px;
 	max-width: 335px;
-  #min-height: 330px;
 	padding: 0 0 0 6px;
 	margin: 20px auto;
-  #margin-top: 20px;
-  #margin-left: 10px;
 }
 
 .tabs>section {
@@ -552,12 +475,12 @@ main section {
 	border: 1px solid #ddd;
   border-top: none;
   min-height: 160px;
+  border-radius: 0 0 5px 5px;
 }
 
 .tabs>section p {
 	margin: 0 0 0 0;
   padding: 6px 0 0 1px;
-	#line-height: 1.3;
   font: 9pt/14pt "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -571,19 +494,14 @@ main section {
 
 .tabs>label {
 	display: inline-block;
-	#margin: 0px -4px -3px -3px;
   margin: 0px -4px 0px 0px;
-	#padding: 13px 13px 5px 17px;
   padding: 13px 13px 5px 13px;
   font: 15pt "Yrsa", serif;
   font-weight: 500;
   letter-spacing: 0.5px;
 	text-align: center;
 	color: white;
-	#border: 1px solid green;
-	#border-width: 1px 1px 1px 1px;
 	background: brown;
-	#border-radius: 3px 3px 0 0;
   width: 32.5%;
   border-bottom: 1px solid #fff;
 }
@@ -591,12 +509,15 @@ main section {
 	color: #888;
 	cursor: pointer;
 }
+#tab1-label {
+  border-radius: 5px 0 0 0;
+}
+#tab3-label {
+  border-radius: 0 5px 0 0;
+}
 
 .tabs>input:checked+label {
 	color: #555;
-  #padding: 13px 13px 13px 13px;
-  #margin: 0px 0px 0px 0px;
-	#border-top: 1px solid #009933;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
 	border-bottom: none;
@@ -616,7 +537,6 @@ main section {
 }
 
 .h3 {
-  #padding: 0px 0px 0px 0px;
   margin: 10px 0px 0px 1px;
   font: 19pt "Yrsa", serif;
   font-weight: 600;
@@ -627,7 +547,6 @@ main section {
 
 #who {
   max-width: 327px;
-  #min-width: 380px;
   height: 100px;
   background-size: cover;
   margin: 20px 0 0 3px;
@@ -638,16 +557,13 @@ main section {
 #main-block2-div2-article2 p, #main-block2-div2-article2
  a {
   max-width: 330px;
-  #min-width: 380px;
   margin: 17px 0 0 1px;
   padding: 0px 0px 0px 0px;
   font: 9pt/14pt "Montserrat", sans-serif;
-  #font: 12pt "Yrsa", serif;
   font-weight: 600;
   letter-spacing: 0.3px;
   word-spacing: -0.5px;
   color: black;
-  #border: 1px solid red;
 }
 #main-block2-div2-article2 a {
   padding: 0 0 0 3px;
@@ -678,24 +594,17 @@ main section {
 
 /*================================FOOTER=============================*/
 footer {
-  #width: 100%;
   width: 100vw;
   position: relative;
-  #top: 138px;
   max-width: 1080px;
   min-width: 410px;
-  #min-height: 485px;
   background-color: green;
   margin: 0 auto;
   margin-top: 35px;
-  #right: 0px;
-  #margin-bottom: 35px;
 }
-
 
 /*=============FOOTER-BLOCK1=================*/
 .footer {
-  #width: 100vw;
   width: 100%;
   max-width: 1080px;
   min-width: 410px;
@@ -711,7 +620,6 @@ footer {
 	width: 100%;
 	display: block;
 	clear: both;
-  #padding-bottom: 25px;
 }
 
 .footer-div {
@@ -722,12 +630,8 @@ footer {
   min-height: 375px;
   margin: 10px 45px 0 0px;
   padding: 10px 10px 10px 10px;
-  #border: 1px solid red;
-  #background-color: yellow;
 }
-#footer-block1-div {
 
-}
 #footer-block1-div3 {
   margin-right: 10px;
 }
@@ -759,17 +663,16 @@ footer {
   font: 12pt "Yrsa", serif;
   font-weight: 600;
   letter-spacing: -0.7px;
-  #word-spacing: -3px;
+  border-radius: 2px;
 }
 
 .footer-form textarea {
   min-height: 112px;
   padding: 12px;
-  #margin: 10px 5px 12px 0;
   font: 12pt "Yrsa", serif;
   font-weight: 600;
   letter-spacing: -0.7px;
-  #word-spacing: -3px;
+  border-radius: 2px;
 }
 
 ::-webkit-input-placeholder {color:blue;}
@@ -795,7 +698,6 @@ footer {
   font: 9pt/14pt "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 0.3px;
-  #word-spacing: -0.5px;
   color: white;
 }
 .footer-twitter a {
@@ -824,7 +726,6 @@ footer {
 }
 #portfolio {
   right: 15px;
-
 }
 
 .footer-projects {
@@ -849,12 +750,12 @@ footer {
   margin-right: 0px;
 }
 
-
 /*=============FOOTER-BLOCK2=================*/
 #footer-block2 {
+  position: relative;
   background-color: blue;
   display: inline-block;
-  height: 67px;
+  min-height: 67px;
 }
 
 #footer-block2 p {
@@ -864,6 +765,7 @@ footer {
   font-weight: 500;
   letter-spacing: 0.6px;
   color: white;
+  margin-right: 300px;
 }
 
 #footer-block2 a {
@@ -878,10 +780,12 @@ footer {
   position: absolute;
   right: 0px;
   bottom: 1px;
+  margin-right: 37px;
+  margin-left: 150px;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-div#pix {
+d#iv#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
@@ -889,8 +793,5 @@ div#pix {
 	height: 1820px;
 	opacity: 0.4;
 	top: 0px;
-	#left: 0px;
-	#bottom: 0px;
-  #margin: 0 auto;
 	z-index: 999;
 }
