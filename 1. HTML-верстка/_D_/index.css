@@ -447,7 +447,9 @@ main:after{
   width: 37.7%;
   min-width: 380px;
   z-index: 20;
+  background: linear-gradient(#f5e3cd, #f8eedf);
 }
+/*f8eedf ffefe1 f5e3cd*/
 
 #main-block2-div2 article {
 
