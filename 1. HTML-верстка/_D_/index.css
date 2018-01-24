@@ -2,18 +2,6 @@
             Quattrocento|Suravaram|Taviraj|Yrsa:400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 
-/*
-общий бэкграунд - f8eedf (светло-бежевый) - opacity 100
-header-нижний слой - 000000 (черный) - opacity 100
-header-шум - разноцветный шум (noise.jpg) - opacity 5
-deccaa - бежевый
-40312a - коричневый
-febf5d - оранжевый
-0092a1 - сине-зеленый
-
-125*95 - размер миниатюр Our Recent Projects
-Welcome to our site - под картинками есть тени
-*/
 
 * {
 	box-sizing: border-box;
@@ -48,13 +36,24 @@ header:after {
   background-color: #febf5d;
   padding: 5px 0 0px 0;
 }
+#header-block1::after {
+  background-image: url("pics/noise.jpg");
+  content: "";
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
 
 #header-block1 h1 {
   position: relative;
   display: inline-block;
   left: 37px;
   font: 25pt "Yrsa", serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 4.4px;
   color: white;
 }
@@ -65,6 +64,7 @@ header:after {
   top: 33px;
   right: 17px;
   margin-left: 250px;
+  z-index: 2;
 }
 
 #header-block1 div {
@@ -76,6 +76,9 @@ header:after {
   background-size: cover;
   width: 32px;
   height: 32px;
+}
+.icon:hover {
+  opacity: 0.5;
 }
 
 #header-block1-digg {
@@ -124,7 +127,7 @@ header:after {
   letter-spacing: 0.79px;
   color: white;
 }
-#header-block2 div p:hover {
+#header-block2>div>p:hover {
   color: #0092a1;
 }
 p.menu-active {
@@ -200,7 +203,7 @@ p.menu-active {
   background: linear-gradient(#00748f, #009ba9);
 }
 .form-button button:hover {
-	background: #0092a1;
+	background: #0092aa;
 }
 .form-button button:hover:active,  .form-button button:active {
 	background: green;
@@ -263,7 +266,7 @@ main:after{
 #main-block1-div1 h2 {
   padding: 26px 50px 0px 44px;
   font: 21pt "Yrsa", serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 2.5px;
   color: #0092a1;
 }
@@ -298,6 +301,9 @@ main:after{
 }
 #main-block1-div1 #button2 {
   left: 70px;
+}
+#main-block1-div1 .main-block1-button:hover {
+  background-color: #009ba9;
 }
 
 #main-block1-div2 {
@@ -358,7 +364,7 @@ main:after{
   margin-top: 43px;
   padding: 0px 0px 0px 36px;
   font: 21pt "Yrsa", serif;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 2px;
   word-spacing: -3px;
   color: #0092a1;
@@ -384,7 +390,7 @@ main:after{
   font: 12pt "Yrsa", serif;
   font-weight: 500;
   letter-spacing: 0.3px;
-  color: orange;
+  color: #febf5d;
   font-style: oblique;
 }
 
@@ -423,7 +429,7 @@ main:after{
   text-decoration: none;
 }
 .blog a:hover {
-  color: red;
+  color: #febf5d;
 }
 
 #main-block2-div1>div {
@@ -440,6 +446,9 @@ main:after{
   background-color: #40312a;
   text-align: center;
 }
+#main-block2-div1>div:hover {
+  background-color: #febf5d;
+}
 
 /*======MAIN-BLOCK2-DIV2=====*/
 #main-block2-div2 {
@@ -448,11 +457,6 @@ main:after{
   min-width: 380px;
   z-index: 20;
   background: linear-gradient(#f5e3cd, #f8eedf);
-}
-/*f8eedf ffefe1 f5e3cd*/
-
-#main-block2-div2 article {
-
 }
 
 #main-block2-div2-article1 {
@@ -552,11 +556,10 @@ main:after{
   background-size: cover;
   margin: 20px 0 0 3px;
   background-image: url("pics/rabbit.jpg");
-  border: 5px solid orange;
+  border: 5px solid #febf5d;
 }
 
-#main-block2-div2-article2 p, #main-block2-div2-article2
- a {
+#main-block2-div2-article2 p, #main-block2-div2-article2 a {
   max-width: 330px;
   margin: 17px 0 0 1px;
   padding: 0px 0px 0px 0px;
@@ -574,7 +577,7 @@ main:after{
   text-decoration: none;
 }
 #main-block2-div2-article2 a:hover {
-  color: red;
+  color: #febf5d;
 }
 
 #main-block2-div2-article3 div {
@@ -583,8 +586,12 @@ main:after{
   height: 138px;
   background-size: cover;
   margin: 20px 30px 0 3px;
-  border: 5px solid orange;
+  border: 5px solid #febf5d;
 }
+#main-block2-div2-article3 div:hover {
+  opacity: 0.5;
+}
+
 #sponsor1 {
   background-image: url("pics/nike.jpg");
 }
