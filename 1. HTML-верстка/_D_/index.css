@@ -55,6 +55,7 @@ header:after {
   font-weight: 500;
   letter-spacing: 4.4px;
   color: white;
+  text-transform: uppercase;
 }
 
 #header-block1 article {
@@ -113,36 +114,38 @@ header:after {
   display: inline-block;
   margin-left: 35px;
   height: 100%;
-  padding-top: 2px;
+  padding: 20px 0px 15px 0px;
   width: 95%;
 }
 
-#header-block2 div p {
+#header-block2 div a, #header-block2 div p {
   display: inline-block;
   margin-right: 16.1px;
-  margin-top: 18px;
+  text-decoration: none;
   font: 11.8pt "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 0.79px;
   color: white;
+  text-transform: uppercase;
 }
-#header-block2>div>p:hover {
+#header-block2>div>a:hover {
   color: #0092a1;
 }
-p.menu-active {
+a.menu-active {
   color: #0092a1 !important;
 }
 
 #last-menu-item {
-  padding-right: 280px;
+  margin-right: 280px;
 }
 
 #search {
   display: inline-block;
   position: absolute;
-  right: 20px;
+  top: 5px;
+  right: 38px;
   z-index: 11;
-  margin-top: 0px;
+  #margin-top: 0px;
 }
 
 #header-block2 div#search p {
@@ -279,6 +282,7 @@ main:after{
   font-weight: 500;
   letter-spacing: 2.5px;
   color: #0092a1;
+  text-transform: uppercase;
 }
 #main-block1-div1 p {
   padding: 0px 22vw 0px 42px;
@@ -295,26 +299,29 @@ main:after{
 #main-block1-div1 .main-block1-button {
   display: inline-block;
   position: relative;
-  top: 34px;
+  top: 28px;
   width: 170px;
   height: 45px;
   text-align: center;
   left: 43px;
   padding: 13px 3px 0px 0;
   margin-bottom: 40px;
-  #background-color: #febf5d;
   background: linear-gradient(#ffc54f, #ffaf4c);
   font: 11.65pt "Montserrat", sans-serif;
   font-weight: 600;
+  color: white;
   letter-spacing: 0.4px;
   z-index: 5;
   border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 #main-block1-div1 #button2 {
   left: 70px;
 }
 #main-block1-div1 .main-block1-button:hover {
   background-color: #009ba9;
+  opacity: 0.7;
 }
 
 #main-block1-div2 {
@@ -379,6 +386,7 @@ main:after{
   letter-spacing: 2px;
   word-spacing: -3px;
   color: #0092a1;
+  text-transform: uppercase;
 }
 
 #main-block2-div1 article {
@@ -443,7 +451,7 @@ main:after{
   color: #febf5d;
 }
 
-#main-block2-div1>div {
+#main-block2-div1>a {
   position: absolute;
   bottom: -27px;
   right: 54px;
@@ -456,9 +464,11 @@ main:after{
   color: white;
   background-color: #40312a;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-#main-block2-div1>div:hover {
-  background-color: #febf5d;
+#main-block2-div1>a:hover {
+  opacity: 0.7;
 }
 
 /*======MAIN-BLOCK2-DIV2=====*/
@@ -559,6 +569,7 @@ main:after{
   letter-spacing: 2.4px;
   word-spacing: -3px;
   color: #0092a1;
+  text-transform: uppercase;
 }
 
 #who {
@@ -591,7 +602,7 @@ main:after{
   color: #febf5d;
 }
 
-#main-block2-div2-article3 div {
+#main-block2-div2-article3 a {
   display: inline-block;
   width: 145px;
   height: 138px;
@@ -599,8 +610,8 @@ main:after{
   margin: 20px 30px 0 3px;
   border: 5px solid #febf5d;
 }
-#main-block2-div2-article3 div:hover {
-  opacity: 0.5;
+#main-block2-div2-article3 a:hover {
+  opacity: 0.7;
 }
 
 #sponsor1 {
@@ -630,7 +641,7 @@ footer {
 
 #footer-block1 {
   background-color: #40312a;
-  padding: 15px 0px 20px 25px;
+  padding: 15px 0px 10px 25px;
 }
 
 #footer-block1:after{
@@ -670,14 +681,15 @@ footer {
 
 .footer-form {
   margin: 8px 0 50px 0;
-
+  #background-color: green;
+  padding: 0px 0px 35px 0px;
 }
 
 .footer-form input {
-  padding: 6px 12px 0 12px;
+  padding: 0px 10px 0 12px;
   height: 38px;
   width: 120px;
-  margin: 10px 5px 12px 0;
+  margin: 9px 5px 12px 0;
   font: 12pt "Yrsa", serif;
   font-weight: 600;
   letter-spacing: -0.7px;
@@ -707,6 +719,9 @@ footer {
   width: 290px;
   margin-right: 0;
 }
+#submit {
+
+}
 
 #footer-block1-div3 h3 {
   padding-bottom: 8px;
@@ -727,6 +742,7 @@ footer {
 
 .footer-button {
   position: absolute;
+  padding-top: 5px;
   right: 21px;
   bottom: 30px;
   width: 119px;
@@ -737,8 +753,13 @@ footer {
   color: white;
   background: linear-gradient(#ffc54f, #ffaf4c);
   text-align: center;
-  padding-top: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+a.footer-button:hover {
+  opacity: 0.7;
+}
+
 #submit {
   right: 17px;
   letter-spacing: 0.8px;
@@ -804,7 +825,7 @@ footer {
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-d#iv#pix {
+div#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
