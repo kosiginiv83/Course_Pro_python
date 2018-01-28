@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Average|Crimson+Text|\
-            Quattrocento|Suravaram|Taviraj|Yrsa:400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Yrsa:400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 
 
@@ -33,7 +32,7 @@ header:after {
 
 /*=============HEADER-BLOCK1=================*/
 #header-block1 {
-  background-color: #febf5d;
+  background: linear-gradient(#ffc54f, #ffaf4c);
   padding: 5px 0 0px 0;
 }
 #header-block1::after {
@@ -262,6 +261,17 @@ main:after{
   z-index: 2;
   border-radius: 6px;
 }
+#main-block1-div1::after {
+  background-image: url("pics/noise.jpg");
+  content: "";
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
 
 #main-block1-div1 h2 {
   padding: 26px 50px 0px 44px;
@@ -292,7 +302,8 @@ main:after{
   left: 43px;
   padding: 13px 3px 0px 0;
   margin-bottom: 40px;
-  background-color: #febf5d;
+  #background-color: #febf5d;
+  background: linear-gradient(#ffc54f, #ffaf4c);
   font: 11.65pt "Montserrat", sans-serif;
   font-weight: 600;
   letter-spacing: 0.4px;
@@ -724,7 +735,7 @@ footer {
   font-weight: 500;
   letter-spacing: 0px;
   color: white;
-  background-color: #febf5d;
+  background: linear-gradient(#ffc54f, #ffaf4c);
   text-align: center;
   padding-top: 5px;
 }
