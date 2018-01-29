@@ -747,7 +747,11 @@ footer {
   font: 16pt "Yrsa", serif;
   right: 12px;
   letter-spacing: 0.8px;
-  border-style: solid;
+  border-style: none;
+  border-radius: 0;
+}
+#submit:hover {
+  opacity: 0.7;
 }
 
 #footer-block1-div3 h3 {
@@ -765,6 +769,9 @@ footer {
   color: #0092a1;
   text-decoration: none;
   font-style: oblique;
+}
+.footer-twitter a:hover {
+  color: #febf5d;
 }
 
 .footer-button {
@@ -798,6 +805,10 @@ a.footer-button:hover {
   height: 96px;
   border: 5px solid orange;
 }
+.footer-projects:hover {
+  opacity: 0.7;
+}
+
 #sky {
   background-image: url("pics/sky.jpg");
 }
@@ -821,10 +832,11 @@ a.footer-button:hover {
   background: linear-gradient(#009ba9, #00748f);
 }
 
-#footer-block2 div {
+#footer-block2>div {
   #position: relative;
   display: inline-block;
-  margin: 8px 37px;
+  margin: 8px 37px 0 37px;
+  padding-right: 250px;
 }
 
 #footer-block2>div>p {
@@ -845,19 +857,11 @@ a.footer-button:hover {
   left: -7px;
   height: 11px;
   width: 2px;
-  border-left: 2px solid white;
+  border-left: 1.5px solid white;
 }
 #footer-block2>div>p:first-child::after {
   border: 0;
   #background-color: red;
-}
-
-#footer-block2 a {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  font: 11pt "Yrsa", serif;
-  padding-left: 2.7px;
 }
 
 #footer-block2 #footer-links {
@@ -865,11 +869,40 @@ a.footer-button:hover {
   right: 0px;
   bottom: 10px;
   margin-right: 37px;
-  margin-left: 150px;
+  margin-left: 230px;
+}
+
+#footer-block2 #footer-links>a {
+  display: inline-block;
+  position: relative;
+  #padding-left: 2.7px;
+  margin-left: 10.5px;
+  color: white;
+  text-decoration: none;
+  font: 11pt "Yrsa", serif;
+  letter-spacing: 0.6px;
+}
+#footer-links>a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 2px;
+  left: -8px;
+  height: 11px;
+  width: 1.5px;
+  border-left: 2px solid white;
+  z-index: 30;
+}
+#footer-links>a:first-child::after {
+  border: 0;
+}
+
+#footer-block2 #footer-links>a:hover {
+  color: #111f51;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-div#pix {
+d#iv#pix {
 	background-image: url(maket/06-psd.jpg);
 	background-size: 100% 100%;
 	position: absolute;
