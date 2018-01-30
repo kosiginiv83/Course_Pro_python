@@ -251,7 +251,7 @@ main {
   max-width: 1080px;
   min-width: 410px;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 147px;
 }
 
 main:after{
@@ -269,7 +269,7 @@ main:after{
   min-height: 400px;
   max-width: 1080px;
   background-image: url("pics/main_orange.jpg");
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #bdab7d;
 }
 #main-block1::before {
   display: block;
@@ -278,7 +278,7 @@ main:after{
   content: "";
   width: 100%;
   height: 1px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #bdab7d;
 }
 
 #main-block1-div1 article {
@@ -387,7 +387,7 @@ main:after{
   width: 0px;
   height: 0px;
   border: 6px solid transparent;
-  border-bottom: 9px solid rgb(255, 68, 0);
+  border-bottom: 9px solid rgb(231, 207, 171);
 }
 
 #eye {
@@ -401,7 +401,7 @@ main:after{
   background-size: cover;
   margin-left: 500px;
   background-size: cover;
-  box-shadow: 3px 30px 27px -20px red;
+  box-shadow: 3px 30px 27px -20px #0c1f22;
 }
 #abstract {
   position:absolute;
@@ -412,7 +412,7 @@ main:after{
   z-index: 4;
   background-color: white;
   background-size: cover;
-  box-shadow: 3px 30px 27px -20px red;
+  box-shadow: 3px 30px 27px -20px #0c1f22;
 }
 
 /*=============MAIN-BLOCK2=================*/
@@ -533,7 +533,7 @@ main:after{
   z-index: 20;
   background: linear-gradient(#f5e3cd, #f8eedf);
   border-left: 2px solid;
-  border-image: linear-gradient(to bottom, red, green) 1 100%;
+  border-image: linear-gradient(to bottom, #e1cfb9, #fcefdf) 1 100%;
 }
 
 #main-block2-div2-article1 {
@@ -554,20 +554,38 @@ main:after{
   margin: -1px 0 0 0;
 	padding: 12px 0 0 12px;
   background: linear-gradient(#009ba9, #00748f);
-	#border: 1px solid white;
   border-top: none;
   min-height: 160px;
   border-radius: 0 0 5px 5px;
 }
 
 .tabs>section p {
-	margin: 0 0 0 0;
-  padding: 6px 0 0 1px;
+  position: relative;
+	margin: 0 0 5px -12px;
+  padding: 6px 0 10px 14px;
   font: 9pt/14pt "Montserrat", sans-serif;
   font-weight: 400;
   letter-spacing: 0.3px;
 	color: white;
   text-shadow: 0px -1px #555;
+  border-bottom: 1px solid #0398ae;
+  #background-color: green;
+}
+.tabs>section p:last-child {
+  border-bottom: none;
+}
+.tabs>section p::after {
+  display: block;
+  position: absolute;
+  bottom: 0.5px;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  content: "";
+  border-bottom: 1px solid #004b58;
+}
+.tabs>section p:last-child::after {
+  border-bottom: none;
 }
 
 .tabs>input {
@@ -746,7 +764,7 @@ footer {
   left: 0px;
   width: 100%;
 	content: "";
-	border-top: 1px solid red;
+	border-top: 1px solid #be9991;
 }
 #footer-block1::after{
 	content: "";
