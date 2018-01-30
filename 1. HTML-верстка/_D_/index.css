@@ -377,8 +377,6 @@ main:after{
 
 #main-block1-div2>p {
   position: relative;
-  #background-color: green;
-  width: 500px;
 }
 #main-block1-div2>p::before {
   display: block;
@@ -499,7 +497,7 @@ main:after{
 .blog a {
   padding: 0 0 0 8px;
   color: #0092a1;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
 }
 .blog a:hover {
@@ -521,6 +519,7 @@ main:after{
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  text-shadow: 0px -1px #000;
 }
 #main-block2-div1>a:hover {
   opacity: 0.7;
@@ -565,9 +564,10 @@ main:after{
 	margin: 0 0 0 0;
   padding: 6px 0 0 1px;
   font: 9pt/14pt "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.3px;
 	color: white;
+  text-shadow: 0px -1px #555;
 }
 
 .tabs>input {
@@ -607,6 +607,7 @@ main:after{
 	background: #0092a1;
   color: white;
   width: 35%;
+  text-shadow: 0px -1px #555;
 }
 
 #tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3 {
@@ -728,6 +729,11 @@ footer {
 
 #footer-block1-div3 {
   margin-right: 10px;
+}
+
+.footer .h3 {
+  font-weight: 500;
+  text-shadow: 0px -1px #222;
 }
 
 #footer-block1-div1 h3 {
