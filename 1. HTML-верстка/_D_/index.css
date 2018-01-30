@@ -426,13 +426,10 @@ main:after{
 /*======MAIN-BLOCK2-DIV1=====*/
 #main-block2-div1 {
   position: relative;
-  top: 1px;
-  left: 1px;
-  width: 62.3%;
+  padding-bottom: 60px;
+  width: 61.8%;
   display: inline-block;
-  #float: left;
   min-width: 410px;
-  #background-color: green;
   vertical-align: top;
 }
 
@@ -512,8 +509,8 @@ main:after{
 
 #main-block2-div1>a {
   position: absolute;
-  bottom: -27px;
-  right: 54px;
+  bottom: 32px;
+  right: 48px;
   padding: 5px 0px 0px 0px;
   width: 116px;
   height: 30px;
@@ -534,10 +531,9 @@ main:after{
 /*======MAIN-BLOCK2-DIV2=====*/
 #main-block2-div2 {
   display: inline-block;
-  width: 37.3%;
+  width: 37.82%;
   min-width: 380px;
-  #width: 30%;
-  #min-width: 350px;
+  margin: 0 auto;
   z-index: 20;
   background: linear-gradient(#f5e3cd, #f8eedf);
   border-left: 2px solid;
@@ -741,7 +737,7 @@ main:after{
 }
 #sponsor2 {
   background-image: url("pics/adidas.jpg");
-  margin-right: 10px !important;
+  margin-right: 0px !important;
 }
 
 /*================================FOOTER=============================*/
@@ -751,7 +747,7 @@ footer {
   max-width: 1080px;
   min-width: 410px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 18px;
 }
 
 /*=============FOOTER-BLOCK1=================*/
